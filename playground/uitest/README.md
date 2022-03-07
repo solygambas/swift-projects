@@ -1,8 +1,4 @@
-# Swift Projects
-
-A small project to understand Swift core concepts.
-
-## UI Test
+# UI Test
 
 A quick intro to Xcode, Swift and SwiftUI.
 
