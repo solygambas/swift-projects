@@ -7,10 +7,21 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        //Text("Hello!").padding().background(Color.blue)
-        Text(/*@START_MENU_TOKEN@*/"Hello"/*@END_MENU_TOKEN@*/)
-            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-            .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.blue/*@END_MENU_TOKEN@*/)
+        VStack {
+            Spacer()
+            Image("logo")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+            Spacer()
+            HStack() {
+                Spacer()
+                Text("Hello")
+                Spacer()
+                Text("World")
+                Spacer()
+            }
+            Spacer()
+        }
     }
 }
 

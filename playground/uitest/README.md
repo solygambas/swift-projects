@@ -7,5 +7,6 @@ A quick intro to Xcode, Swift and SwiftUI.
 - setting up a Swift Project in Xcode.
 - previewing the UI with Xcode.
 - building the UI with SwiftUI.
+- playing with basic UI views and containers.
 
 Based on [SwiftUI Tutorial for Beginners](https://www.youtube.com/watch?v=F2ojC6TNwws) by Chris Ching - CodeWithChris (2021).
