@@ -8,6 +8,6 @@ A card game to learn Swift and SwiftUI.
 
 ## Features
 
--
+- building the layout with SwiftUI.
 
 Based on [SwiftUI Tutorial for Beginners](https://www.youtube.com/watch?v=F2ojC6TNwws) by Chris Ching - CodeWithChris (2021).
