@@ -23,6 +23,26 @@ struct ContentView: View {
                 Spacer()
             }
             Spacer()
+            VStack {
+                // with closure
+                Button("Click Me", action: {
+                    print("Hello World")
+                })
+                // with trailing closure
+                Button("Click Me") {
+                    print("Hello World")
+                }
+                // with label view
+                Button {
+                    print("Hello World")
+                } label: {
+                    HStack {
+                        Image(systemName: "pencil")
+                        Text("Edit")
+                    }
+                }
+
+            }
         }
     }
 }
