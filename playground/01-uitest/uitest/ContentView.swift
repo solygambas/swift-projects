@@ -5,6 +5,8 @@
 
 import SwiftUI
 
+// ContentView conforms to the View protocol:
+    // needs a body that returns some View
 struct ContentView: View {
     var body: some View {
         VStack {
@@ -29,7 +31,8 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ContentView()
-            ContentView()
+                .previewDevice("iPhone 11")
+                .preferredColorScheme(.dark)
         }
     }
 }
