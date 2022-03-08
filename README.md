@@ -2,15 +2,14 @@
 
 A small project to understand Swift core concepts.
 
-## UI Test
+## War Card Game
 
-A quick intro to Xcode, Swift and SwiftUI.
+A card game to learn Swift and SwiftUI.
+
+[See 01-war-card-game folder](https://github.com/solygambas/swift-projects/tree/main/01-war-card-game)
 
 ## Features
 
-- setting up a Swift Project in Xcode.
-- previewing the UI with Xcode.
-- building the UI with SwiftUI.
-- playing with basic UI views and containers.
+-
 
 Based on [SwiftUI Tutorial for Beginners](https://www.youtube.com/watch?v=F2ojC6TNwws) by Chris Ching - CodeWithChris (2021).
