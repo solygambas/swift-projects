@@ -8,11 +8,11 @@ A card game to learn Swift and SwiftUI.
 
 [See 01-war-card-game folder](https://github.com/solygambas/swift-projects/tree/main/01-war-card-game)
 
-<!---<p align="center">
+<p align="center">
     <a href="https://github.com/solygambas/swift-projects/tree/main/01-war-card-game">
         <img src="01-war-card-game/screenshot.png" style="width:528px;max-width:100%;">
     </a>
-</p> -->
+</p>
 
 ## Features
 
