@@ -76,7 +76,45 @@
 
 // ranges
 
-let firstRange = 72...96
-let secondRange = -100...100
-let thirdRange = 9...
-let fourthRange = ...37000
+//let firstRange = 72...96
+//let secondRange = -100...100
+//let thirdRange = 9...
+//let fourthRange = ...37000
+
+// for loops
+
+//for num in 1...20 {
+//    if (num % 2 != 0) {
+//        print(num)
+//    }
+//}
+
+// sorting pizzas
+
+//var pizzasChoices = ["Hawaiian", "Cheese", "Margherita", "Meatlovers", "Vegetarian", "Prosciutto", "Vegan"]
+//pizzasChoices.sort()
+//for pizza in pizzasChoices {
+//    print(pizza)
+//}
+// pizzas = pizzas.sorted()
+// print(pizzas)
+
+// while
+
+//var number = 1
+//
+//while (number < 100) {
+//    number *= 2
+//    print(number)
+//}
+
+// repeat-while
+
+//var currentLevel = 1
+//var winningLevel = 10
+//
+//repeat {
+//    print("We're at level \(currentLevel) of \(winningLevel)!")
+//    currentLevel += 1
+//} while (currentLevel <= 10)
+//print("Game finished")
