@@ -18,7 +18,65 @@
 
 // dictionaries
 
-var dessertPizzasOrders = ["Rocky Road": 2, "Nutella": 3, "Caramel Swirl": 1]
-print(dessertPizzasOrders["Rocky Road"]!)
-print(dessertPizzasOrders["Caramel Swirl"]!)
-dessertPizzasOrders.updateValue(17, forKey: "Banana Split")
+//var dessertPizzasOrders = ["Rocky Road": 2, "Nutella": 3, "Caramel Swirl": 1]
+//print(dessertPizzasOrders["Rocky Road"]!)
+//print(dessertPizzasOrders["Caramel Swirl"]!)
+//dessertPizzasOrders["Banana Split"] = 17
+
+// if statements
+
+//var hawaiianPizzaOrdered = true
+//var veganPizzaOrdered = true
+//var pepperoniPizzaOrdered = false
+
+//if (hawaiianPizzaOrdered) {
+//    print("You must deliver an hawaiian pizza")
+//    hawaiianPizzaOrdered = false
+//}
+//if (veganPizzaOrdered) {
+//    print("You must deliver a vegan pizza")
+//    veganPizzaOrdered = false
+//}
+//if (pepperoniPizzaOrdered) {
+//    print("You must deliver a pepperoni pizza")
+//    pepperoniPizzaOrdered = false
+//}
+
+//var pizzasOrders = ["Hawaiian Pizza": 2, "Vegan Pizza": 1, "Pepperoni Pizza": 9]
+//
+//if (pizzasOrders["Hawaiian Pizza"]! > 0) {
+//    print("You must deliver \(pizzasOrders["Hawaiian Pizza"]!) x Hawaiian Pizza")
+//}
+//if (pizzasOrders["Vegan Pizza"]! > 0) {
+//    print("You must deliver \(pizzasOrders["Vegan Pizza"]!) x Vegan Pizza")
+//}
+//if (pizzasOrders["Pepperoni Pizza"]! > 0) {
+//    print("You must deliver \(pizzasOrders["Pepperoni Pizza"]!) x Pepperoni Pizza")
+//}
+
+//var planet = "Jupiter"
+//if (planet == "Jupiter") {
+//    print("Jupiter is named after the Roman king of the gods.")
+//} else if (planet == "Mars") {
+//    print("Mars has a lot of Earth-made rovers on it.")
+//} else {
+//    print("All the planets are pretty cool.")
+//}
+
+// switch
+
+//var number = 7
+//
+//switch number {
+//    case 7:
+//        print("It is lucky number 7")
+//    default:
+//        print("I've told you everything I know about lucky numbers")
+//}
+
+// ranges
+
+let firstRange = 72...96
+let secondRange = -100...100
+let thirdRange = 9...
+let fourthRange = ...37000
