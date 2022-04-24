@@ -55,10 +55,41 @@
 //
 //print(greetingsFor(name: "Bob").wait) // Please Bob, wait for your order while it's cooking!
 
-func billSplit(totalCost: Double, tip: Int = 20, guestNumber: Int = 2) {
-    let actualTip = Double(tip)/100.0 * totalCost
-    let totalPerGuest = (totalCost + actualTip) / Double(guestNumber)
-    print("You have to pay $\(totalPerGuest) per guest") // 54.0
-}
+//func billSplit(totalCost: Double, tip: Int = 20, guestNumber: Int = 2) {
+//    let actualTip = Double(tip)/100.0 * totalCost
+//    let totalPerGuest = (totalCost + actualTip) / Double(guestNumber)
+//    print("You have to pay $\(totalPerGuest) per guest") // 54.0
+//}
+//
+//billSplit(totalCost: 180.0, tip: 20, guestNumber: 4)
 
-billSplit(totalCost: 180.0, tip: 20, guestNumber: 4)
+// enums
+
+//enum MovieGenres {
+//    case action
+//    case drama
+//    case comedy
+//}
+//
+//var favoriteGenre: MovieGenres = .action
+//
+//switch (favoriteGenre) {
+//case .action:
+//    print("You like action movies")
+//case .comedy:
+//    print("You like to laugh")
+//case .drama:
+//    print("You like to see inspiring stories")
+//default:
+//    print("You like all genres!")
+//}
+
+//enum MovieGenres: String, CaseIterable {
+//    case action = "You like action movies"
+//    case drama = "You like to cry"
+//    case comedy = "You like to laugh"
+//}
+//
+//for movie in MovieGenres.allCases {
+//    print(movie.rawValue)
+//}
