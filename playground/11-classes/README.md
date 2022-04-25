@@ -7,5 +7,6 @@ A Swift Playground to learn how to work with classes.
 - creating a class.
 - inheriting from another class.
 - overriding methods.
+- creating an actor to handle concurrency with async/await.
 
 Based on [Head First Swift](https://www.amazon.com/Head-First-Swift-Anthony-Gray/dp/1491922850) by Jon Manning and Paris Buttfield-Addison (2021).
