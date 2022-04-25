@@ -47,28 +47,62 @@
 //performWithPiano(song: neverGonnaGiveYouUp)
 //performWithPiano(song: byeByeBye)
 
-func operateOn(_ array: [Int], operation: (Int, Int) -> Int) -> Int {
-    var cur = array[0]
-    for item in array[1...] {
-        cur = operation(cur, item)
-    }
-    return cur
-}
+//func operateOn(_ array: [Int], operation: (Int, Int) -> Int) -> Int {
+//    var cur = array[0]
+//    for item in array[1...] {
+//        cur = operation(cur, item)
+//    }
+//    return cur
+//}
+//
+//let numbers = [7, 14, 6, 1, 8]
+//
+//let test = operateOn(numbers, operation: {(total: Int, next: Int) in
+//    return total * next
+//})
+//let sumResult = operateOn(numbers, operation: +)
+//
+//let sumClosure = {(total: Int, next: Int) in
+//    return total + next
+//}
+//
+//let sumTest = operateOn(numbers, operation: sumClosure)
+//
+//print(test) // 4784
+//print(sumResult) // 36
+//print(sumTest) // 36
 
-let numbers = [7, 14, 6, 1, 8]
+//func counter() -> () -> Int {
+//    var count = 0
+//    let incrementer: () -> Int = {
+//        count += 1
+//        return count
+//    }
+//    return incrementer
+//}
+//
+//let myCounter = counter()
+//let secondCounter = counter()
+//myCounter()
+//myCounter()
+//myCounter() // 3
+//secondCounter() // 1
 
-let test = operateOn(numbers, operation: {(total: Int, next: Int) in
-    return total * next
-})
-let sumResult = operateOn(numbers, operation: +)
+// autoclosures
 
-let sumClosure = {(total: Int, next: Int) in
-    return total + next
-}
-
-let sumTest = operateOn(numbers, operation: sumClosure)
-
-print(test) // 4784
-print(sumResult) // 36
-print(sumTest) // 36
+//func servePizza(box: Bool, pizza: @autoclosure
+//    () -> String) {
+//    if (box) {
+//        print("Boxing the pizza '\(pizza())'")
+//    } else {
+//        print("We're all done.")
+//    }
+//}
+//
+//func nextPizza() -> String {
+//    return "Hawaiian"
+//}
+//
+//servePizza(box: true, pizza: nextPizza())
+//servePizza(box: true, pizza: "Cheesey")
 
