@@ -106,3 +106,17 @@
 //servePizza(box: true, pizza: nextPizza())
 //servePizza(box: true, pizza: "Cheesey")
 
+// sorting collections
+
+var numbers = [1, 5, 2, 3, 7, 4, 6, 9, 8]
+
+let sortClosure = { (a: Int, b: Int) -> Bool in
+    a < b
+}
+
+//numbers.sort(by: sortClosure)
+
+// shorthand argument names
+
+numbers.sort(by: {$0 < $1})
+print(numbers)
