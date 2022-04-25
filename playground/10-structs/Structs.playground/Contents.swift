@@ -75,3 +75,53 @@ struct Pizza {
 //
 //let hawaiian = PrivataPizza(name: "Hawaiian", chefsNotes: "Don't put too much pineapple")
 //print(hawaiian.name)
+
+//struct PizzaWithMethod {
+//    var name: String
+//    var ingredients: [String]
+//    // computed properties
+//    var lactoseFree: Bool {
+//        ingredients.contains("cheese") ? false : true
+//    }
+//    // property observer
+//    var quantity: Int = 10 {
+//        didSet {
+//            print("The pizza \(name) has \(quantity) pizzas left.")
+//        }
+//    }
+//
+//    func getPrice() -> Int {
+//        ingredients.count * 2
+//    }
+//
+//    mutating func setName(newName: String) {
+//        self.name = newName
+//    }
+//}
+//
+//var hawaiianPizza = PizzaWithMethod(name: "Hawaiian", ingredients: ["cheese", "pineapple", "ham", "pizza sauce"])
+//hawaiianPizza.getPrice() // 8
+//hawaiianPizza.lactoseFree
+//hawaiianPizza.setName(newName: "Pineapple")
+//hawaiianPizza.name
+//let vegPizza = PizzaWithMethod(name: "Vegetarian Special", ingredients: ["avocado", "sundried tomato", "basil"])
+//vegPizza.getPrice() // 6
+//vegPizza.lactoseFree
+//var chickenPizza = PizzaWithMethod(name: "BBQ Chicken", ingredients: ["chicken", "cheese", "BBQ sauce", "pineapple"])
+//chickenPizza.getPrice() // 8
+//chickenPizza.quantity -= 1 // The pizza BBQ Chicken has 9 pizzas left.
+
+// lazy
+
+struct LazyPizza {
+    lazy var cookingDuration = getCookingTime()
+}
+
+func getCookingTime() -> Int {
+    print("getCookingTime() was called!")
+    return 100
+}
+
+var hawai = LazyPizza()
+print("Lazy property will be generated later")
+print(hawai.cookingDuration)
