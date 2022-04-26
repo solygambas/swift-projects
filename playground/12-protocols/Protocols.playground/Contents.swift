@@ -95,55 +95,72 @@
 //myTenthRobot.speak()
 
 
-protocol Animal {
-    var type: String { get }
+//protocol Animal {
+//    var type: String { get }
+//}
+//
+//struct Dog: Animal {
+//    var name: String
+//    var type: String
+//
+//    func bark() {
+//        print("Woof!")
+//    }
+//}
+//
+//struct Cat: Animal {
+//    var name: String
+//    var type: String
+//
+//    func meow() {
+//        print("Meow!")
+//    }
+//}
+//
+//struct Pork: Animal {
+//    var name: String
+//    var type: String
+//
+//    func oink() {
+//        print("Oink!")
+//    }
+//}
+//
+//var bunty = Cat(name: "Bunty", type: "British Shorthair")
+//var nigel = Cat(name: "Nigel", type: "Russian Blue")
+//var percy = Cat(name: "Percy", type: "Manx")
+//var argos = Dog(name: "Argos", type: "Whippet")
+//var apollo = Dog(name: "Apollo", type: "Lowchen")
+//var babe = Pork(name: "Babe", type: "Pork")
+//
+//var animals: [Animal] = [bunty, nigel, percy, argos, apollo, babe]
+//
+//animals.forEach { animal in
+//    if (animal.self is Cat) {
+//        let cat = Cat(name: "cat", type: "cat")
+//        cat.meow()
+//    } else if (animal.self is Dog) {
+//        let dog = Dog(name: "dog", type: "dog")
+//        dog.bark()
+//    } else if (animal.self is Pork) {
+//        let pork = Pork(name: "pork", type: "pork")
+//        pork.oink()
+//    }
+//}
+
+// extensions
+
+struct Dog {
+    var name: String
+    var age: Int
 }
 
-struct Dog: Animal {
-    var name: String
-    var type: String
-    
+protocol Bark {
+    func bark()
+}
+
+extension Dog: Bark {
     func bark() {
-        print("Woof!")
-    }
-}
-
-struct Cat: Animal {
-    var name: String
-    var type: String
-    
-    func meow() {
-        print("Meow!")
-    }
-}
-
-struct Pork: Animal {
-    var name: String
-    var type: String
-    
-    func oink() {
-        print("Oink!")
-    }
-}
-
-var bunty = Cat(name: "Bunty", type: "British Shorthair")
-var nigel = Cat(name: "Nigel", type: "Russian Blue")
-var percy = Cat(name: "Percy", type: "Manx")
-var argos = Dog(name: "Argos", type: "Whippet")
-var apollo = Dog(name: "Apollo", type: "Lowchen")
-var babe = Pork(name: "Babe", type: "Pork")
-
-var animals: [Animal] = [bunty, nigel, percy, argos, apollo, babe]
-
-animals.forEach { animal in
-    if (animal.self is Cat) {
-        let cat = Cat(name: "cat", type: "cat")
-        cat.meow()
-    } else if (animal.self is Dog) {
-        let dog = Dog(name: "dog", type: "dog")
-        dog.bark()
-    } else if (animal.self is Pork) {
-        let pork = Pork(name: "pork", type: "pork")
-        pork.oink()
+        print("woof!")
     }
 }
