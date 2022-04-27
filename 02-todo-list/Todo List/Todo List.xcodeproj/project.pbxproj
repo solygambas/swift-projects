@@ -13,8 +13,6 @@
 		EE1988642818316A004CF9AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE19885228183161004CF9AC /* ContentView.swift */; };
 		EE1988652818316A004CF9AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE1988532818316A004CF9AC /* Assets.xcassets */; };
 		EE1988662818316A004CF9AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE1988532818316A004CF9AC /* Assets.xcassets */; };
-		EE198870281835F3004CF9AC /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE19886F281835F3004CF9AC /* IDETemplateMacros.plist */; };
-		EE198871281835F3004CF9AC /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE19886F281835F3004CF9AC /* IDETemplateMacros.plist */; };
 		EE84B88B28190FB500C8659C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE84B88A28190FB500C8659C /* Item.swift */; };
 		EE84B88C28190FB500C8659C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE84B88A28190FB500C8659C /* Item.swift */; };
 /* End PBXBuildFile section */
@@ -26,7 +24,6 @@
 		EE1988582818316A004CF9AC /* Todo List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Todo List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE19885E2818316A004CF9AC /* Todo List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Todo List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE1988602818316A004CF9AC /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		EE19886F281835F3004CF9AC /* IDETemplateMacros.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = IDETemplateMacros.plist; path = ../../../../../../Desktop/IDETemplateMacros.plist; sourceTree = "<group>"; };
 		EE84B88A28190FB500C8659C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,7 +59,6 @@
 			children = (
 				EE19885128183161004CF9AC /* Todo_ListApp.swift */,
 				EE19885228183161004CF9AC /* ContentView.swift */,
-				EE19886F281835F3004CF9AC /* IDETemplateMacros.plist */,
 				EE1988532818316A004CF9AC /* Assets.xcassets */,
 				EE84B88A28190FB500C8659C /* Item.swift */,
 			);
@@ -165,7 +161,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE198870281835F3004CF9AC /* IDETemplateMacros.plist in Resources */,
 				EE1988652818316A004CF9AC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,7 +169,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE198871281835F3004CF9AC /* IDETemplateMacros.plist in Resources */,
 				EE1988662818316A004CF9AC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

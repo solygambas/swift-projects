@@ -10,7 +10,7 @@
 import Foundation
         
 
-struct Item: Identifiable {
+struct Item: Identifiable, Codable {
     let id = UUID()
     var todo: String
 }

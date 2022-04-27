@@ -33,11 +33,11 @@ An app to learn how to use Xcode for Swift.
 
 [See 02-todo-list folder](https://github.com/solygambas/swift-projects/tree/main/02-todo-list)
 
-<!-- <p align="center">
+<p align="center">
     <a href="https://github.com/solygambas/swift-projects/tree/main/02-todo-list">
         <img src="02-todo-list/screenshot.png" style="width:528px;max-width:100%;">
     </a>
-</p> -->
+</p>
 
 ## Features
 
