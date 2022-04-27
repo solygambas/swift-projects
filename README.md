@@ -1,9 +1,10 @@
 # Swift Projects
 
-2 small projects to understand Swift core concepts:
+3 small projects to understand Swift core concepts:
 
 1. [**War Card Game**](#warcardgame): A card game to learn Swift and SwiftUI.
 2. [**Todo List**](#todolist): An app to learn how to use Xcode for Swift.
+3. [**Executive Timer**](#timer): A timer for meetings.
 
 ## <a name="warcardgame"></a> 1) War Card Game
 
@@ -46,5 +47,25 @@ An app to learn how to use Xcode for Swift.
 - making sure each item can be uniquely identified.
 - building a user interface with SwiftUI.
 - saving the list of todos.
+
+Based on [Head First Swift](https://www.amazon.com/Head-First-Swift-Anthony-Gray/dp/1491922850) by Jon Manning and Paris Buttfield-Addison (2021).
+
+## <a name="timer"></a> 3) Timer
+
+A timer for meetings.
+
+[See 03-executive-timer folder](https://github.com/solygambas/swift-projects/tree/main/03-executive-timer)
+
+<!-- <p align="center">
+    <a href="https://github.com/solygambas/swift-projects/tree/main/03-executive-timer">
+        <img src="03-executive-timer/screenshot.png" style="width:528px;max-width:100%;">
+    </a>
+</p> -->
+
+## Features
+
+- creating a new SwiftUI Xcode project for iOS.
+- creating the basic elements of the UI.
+- making the timer update the UI.
 
 Based on [Head First Swift](https://www.amazon.com/Head-First-Swift-Anthony-Gray/dp/1491922850) by Jon Manning and Paris Buttfield-Addison (2021).
