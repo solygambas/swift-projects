@@ -8,7 +8,7 @@ A timer for meetings.
 
 ## Features
 
-- creating a new SwiftUI Xcode project for iOS.
+- creating a SwiftUI Xcode project for iOS.
 - creating the basic elements of the UI.
 - making the timer update the UI.
 
