@@ -1,12 +1,13 @@
 # Swift Projects
 
-5 projects to understand Swift core concepts:
+6 projects to understand Swift core concepts:
 
 1. [**War Card Game**](#warcardgame): A card game to learn Swift and SwiftUI.
 2. [**Todo List**](#todolist): An app to learn how to use Xcode for Swift.
 3. [**Executive Timer**](#timer): A timer for meetings.
 4. [**Swift Pizza**](#swiftpizza): A welcome screen for a pizza app.
 5. [**Dark Map**](#darkmap): A map screen to implement dark mode.
+6. [**Score It**](#scoreit): A two-view score tracker to learn how to share state.
 
 Check the [playground](https://github.com/solygambas/swift-projects/tree/main/playground) if you want to learn Swift syntax first.
 
@@ -113,5 +114,26 @@ A map screen to implement dark mode.
 - creating a basic UI.
 - adding a map with MapKit.
 - enabling dark mode in the iOS simulator to preview the result.
+
+Based on [Head First Swift](https://www.amazon.com/Head-First-Swift-Anthony-Gray/dp/1491922850) by Jon Manning and Paris Buttfield-Addison (2021).
+
+## <a name="scoreit"></a> 6) Score It
+
+A two-view score tracker to learn how to share state.
+
+[See 06-score-it folder](https://github.com/solygambas/swift-projects/tree/main/06-score-it)
+
+<p align="center">
+    <a href="https://github.com/solygambas/swift-projects/tree/main/06-score-it">
+        <img src="06-score-it/screenshot.png" style="width:528px;max-width:100%;">
+    </a>
+</p>
+
+## Features
+
+- implementing a class to store the score and the piece count, conforming to ObservableObject.
+- assembling the first view, holding a @StateObject.
+- creating a second view, using an @EnvironmentObject.
+- navigating between the two views with NavigationView.
 
 Based on [Head First Swift](https://www.amazon.com/Head-First-Swift-Anthony-Gray/dp/1491922850) by Jon Manning and Paris Buttfield-Addison (2021).
