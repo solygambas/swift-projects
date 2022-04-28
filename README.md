@@ -1,11 +1,14 @@
 # Swift Projects
 
-4 small projects to understand Swift core concepts:
+5 projects to understand Swift core concepts:
 
 1. [**War Card Game**](#warcardgame): A card game to learn Swift and SwiftUI.
 2. [**Todo List**](#todolist): An app to learn how to use Xcode for Swift.
 3. [**Executive Timer**](#timer): A timer for meetings.
 4. [**Swift Pizza**](#swiftpizza): A welcome screen for a pizza app.
+5. [**Dark Map**](#darkmap): A map screen to implement dark mode.
+
+Check the [playground](https://github.com/solygambas/swift-projects/tree/main/playground) if you want to learn Swift syntax first.
 
 ## <a name="warcardgame"></a> 1) War Card Game
 
@@ -90,5 +93,25 @@ A welcome screen for a pizza app.
 - using VStack and HStack.
 - styling texts, images and buttons.
 - using padding and Spacers.
+
+Based on [Head First Swift](https://www.amazon.com/Head-First-Swift-Anthony-Gray/dp/1491922850) by Jon Manning and Paris Buttfield-Addison (2021).
+
+## <a name="darkmap"></a> 5) Dark Map
+
+A map screen to implement dark mode.
+
+[See 05-dark-map folder](https://github.com/solygambas/swift-projects/tree/main/05-dark-map)
+
+<p align="center">
+    <a href="https://github.com/solygambas/swift-projects/tree/main/05-dark-map">
+        <img src="05-dark-map/screenshot.png" style="width:528px;max-width:100%;">
+    </a>
+</p>
+
+## Features
+
+- creating a basic UI.
+- adding a map with MapKit.
+- enabling dark mode in the iOS simulator to preview the result.
 
 Based on [Head First Swift](https://www.amazon.com/Head-First-Swift-Anthony-Gray/dp/1491922850) by Jon Manning and Paris Buttfield-Addison (2021).
