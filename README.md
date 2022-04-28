@@ -5,6 +5,7 @@
 1. [**War Card Game**](#warcardgame): A card game to learn Swift and SwiftUI.
 2. [**Todo List**](#todolist): An app to learn how to use Xcode for Swift.
 3. [**Executive Timer**](#timer): A timer for meetings.
+4. [**Swift Pizza**](#swiftpizza): A welcome screen for a pizza app.
 
 ## <a name="warcardgame"></a> 1) War Card Game
 
@@ -69,5 +70,25 @@ A timer for meetings.
 - making the timer update the UI.
 - using SF Symbols.
 - displaying two tabs with a TabView.
+
+Based on [Head First Swift](https://www.amazon.com/Head-First-Swift-Anthony-Gray/dp/1491922850) by Jon Manning and Paris Buttfield-Addison (2021).
+
+## <a name="swiftpizza"></a> 4) Swift Pizza
+
+A welcome screen for a pizza app.
+
+[See 04-swift-pizza folder](https://github.com/solygambas/swift-projects/tree/main/04-swift-pizza)
+
+<p align="center">
+    <a href="https://github.com/solygambas/swift-projects/tree/main/04-swift-pizza">
+        <img src="04-swift-pizza/screenshot.png" style="width:528px;max-width:100%;">
+    </a>
+</p>
+
+## Features
+
+- using VStack and HStack.
+- styling texts, images and buttons.
+- using padding and Spacers.
 
 Based on [Head First Swift](https://www.amazon.com/Head-First-Swift-Anthony-Gray/dp/1491922850) by Jon Manning and Paris Buttfield-Addison (2021).
