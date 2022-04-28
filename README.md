@@ -56,16 +56,18 @@ A timer for meetings.
 
 [See 03-executive-timer folder](https://github.com/solygambas/swift-projects/tree/main/03-executive-timer)
 
-<!-- <p align="center">
+<p align="center">
     <a href="https://github.com/solygambas/swift-projects/tree/main/03-executive-timer">
         <img src="03-executive-timer/screenshot.png" style="width:528px;max-width:100%;">
     </a>
-</p> -->
+</p>
 
 ## Features
 
 - creating a SwiftUI Xcode project for iOS.
 - creating the basic elements of the UI.
 - making the timer update the UI.
+- using SF Symbols.
+- displaying two tabs with a TabView.
 
 Based on [Head First Swift](https://www.amazon.com/Head-First-Swift-Anthony-Gray/dp/1491922850) by Jon Manning and Paris Buttfield-Addison (2021).

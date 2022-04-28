@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		EEB8D35F28193AAF0021ED18 /* Executive_TimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB8D35E28193AAF0021ED18 /* Executive_TimerApp.swift */; };
-		EEB8D36128193AAF0021ED18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB8D36028193AAF0021ED18 /* ContentView.swift */; };
+		EEB8D36128193AAF0021ED18 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB8D36028193AAF0021ED18 /* TimerView.swift */; };
 		EEB8D36328193AB10021ED18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEB8D36228193AB10021ED18 /* Assets.xcassets */; };
 		EEB8D36628193AB10021ED18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEB8D36528193AB10021ED18 /* Preview Assets.xcassets */; };
+		EED31310281A5133007F904A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED3130F281A5133007F904A /* ContentView.swift */; };
+		EED31312281A524A007F904A /* TimerSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED31311281A524A007F904A /* TimerSettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EEB8D35B28193AAF0021ED18 /* Executive Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Executive Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEB8D35E28193AAF0021ED18 /* Executive_TimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Executive_TimerApp.swift; sourceTree = "<group>"; };
-		EEB8D36028193AAF0021ED18 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EEB8D36028193AAF0021ED18 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		EEB8D36228193AB10021ED18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEB8D36528193AB10021ED18 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EED3130F281A5133007F904A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EED31311281A524A007F904A /* TimerSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerSettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,10 @@
 		EEB8D35D28193AAF0021ED18 /* Executive Timer */ = {
 			isa = PBXGroup;
 			children = (
+				EED31311281A524A007F904A /* TimerSettingsView.swift */,
+				EED3130F281A5133007F904A /* ContentView.swift */,
 				EEB8D35E28193AAF0021ED18 /* Executive_TimerApp.swift */,
-				EEB8D36028193AAF0021ED18 /* ContentView.swift */,
+				EEB8D36028193AAF0021ED18 /* TimerView.swift */,
 				EEB8D36228193AB10021ED18 /* Assets.xcassets */,
 				EEB8D36428193AB10021ED18 /* Preview Content */,
 			);
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEB8D36128193AAF0021ED18 /* ContentView.swift in Sources */,
+				EEB8D36128193AAF0021ED18 /* TimerView.swift in Sources */,
 				EEB8D35F28193AAF0021ED18 /* Executive_TimerApp.swift in Sources */,
+				EED31310281A5133007F904A /* ContentView.swift in Sources */,
+				EED31312281A524A007F904A /* TimerSettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
