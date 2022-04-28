@@ -1,6 +1,6 @@
 # Swift Projects
 
-3 small projects to understand Swift core concepts:
+4 small projects to understand Swift core concepts:
 
 1. [**War Card Game**](#warcardgame): A card game to learn Swift and SwiftUI.
 2. [**Todo List**](#todolist): An app to learn how to use Xcode for Swift.
