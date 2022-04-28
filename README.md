@@ -1,13 +1,15 @@
 # Swift Projects
 
-6 projects to understand Swift core concepts:
+6 projects to understand Swift core concepts.
 
-1. [**War Card Game**](#warcardgame): A card game to learn Swift and SwiftUI.
-2. [**Todo List**](#todolist): An app to learn how to use Xcode for Swift.
-3. [**Executive Timer**](#timer): A timer for meetings.
-4. [**Swift Pizza**](#swiftpizza): A welcome screen for a pizza app.
-5. [**Dark Map**](#darkmap): A map screen to implement dark mode.
-6. [**Score It**](#scoreit): A two-view score tracker to learn how to share state.
+| #   | Project                           | Description                                           |
+| --- | --------------------------------- | ----------------------------------------------------- |
+| 01  | [**War Card Game**](#warcardgame) | A card game to learn Swift and SwiftUI.               |
+| 02  | [**Todo List**](#todolist)        | An app to learn how to use Xcode for Swift.           |
+| 03  | [**Executive Timer**](#timer)     | A timer for meetings.                                 |
+| 04  | [**Swift Pizza**](#swiftpizza)    | A welcome screen for a pizza app.                     |
+| 05  | [**Dark Map**](#darkmap)          | A map screen to implement dark mode.                  |
+| 06  | [**Score It**](#scoreit)          | A two-view score tracker to learn how to share state. |
 
 Check the [playground](https://github.com/solygambas/swift-projects/tree/main/playground) if you want to learn Swift syntax first.
 
