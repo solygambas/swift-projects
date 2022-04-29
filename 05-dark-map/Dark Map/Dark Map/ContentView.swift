@@ -42,12 +42,15 @@ struct ContentView: View {
                 }
                 Map(coordinateRegion: $region)
                     .edgesIgnoringSafeArea(.all)
-                Button(action: {}) {
-                                Text("Book a tour").foregroundColor(.white).bold()
-                }.frame(width: 350, height: 60)
-                                .background(Color(UIColor.systemIndigo))
-                                .cornerRadius(12)
-                                .padding()
+                NavigationLink (destination: BookTour()) {
+                    Button(action: {}) {
+                        
+                            Text("Book a tour").foregroundColor(.white).bold()
+                    }.frame(width: 350, height: 60)
+                                    .background(Color(UIColor.systemIndigo))
+                                    .cornerRadius(12)
+                                    .padding()
+                }
             }
         }
     }

@@ -12,5 +12,6 @@ A map screen to implement dark mode.
 - adding a map with MapKit.
 - enabling dark mode in the iOS simulator to preview the result.
 - adding local images.
+- loading an image from the web with AsyncImage.
 
 Based on [Head First Swift](https://www.amazon.com/Head-First-Swift-Anthony-Gray/dp/1491922850) by Jon Manning and Paris Buttfield-Addison (2021).

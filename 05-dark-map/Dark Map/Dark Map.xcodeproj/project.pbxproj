@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EE258D5C281BA519008044CC /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE258D5B281BA519008044CC /* ImageView.swift */; };
+		EE258D5E281BAC54008044CC /* BookTour.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE258D5D281BAC54008044CC /* BookTour.swift */; };
 		EED31356281A71E4007F904A /* Dark_MapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED31355281A71E4007F904A /* Dark_MapApp.swift */; };
 		EED31358281A71E4007F904A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED31357281A71E4007F904A /* ContentView.swift */; };
 		EED3135A281A71E5007F904A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EED31359281A71E5007F904A /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		EE258D5B281BA519008044CC /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		EE258D5D281BAC54008044CC /* BookTour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTour.swift; sourceTree = "<group>"; };
 		EED31352281A71E4007F904A /* Dark Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dark Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED31355281A71E4007F904A /* Dark_MapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dark_MapApp.swift; sourceTree = "<group>"; };
 		EED31357281A71E4007F904A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				EED31355281A71E4007F904A /* Dark_MapApp.swift */,
 				EE258D5B281BA519008044CC /* ImageView.swift */,
+				EE258D5D281BAC54008044CC /* BookTour.swift */,
 				EED31357281A71E4007F904A /* ContentView.swift */,
 				EED31359281A71E5007F904A /* Assets.xcassets */,
 				EED3135B281A71E5007F904A /* Preview Content */,
@@ -142,6 +145,7 @@
 			files = (
 				EE258D5C281BA519008044CC /* ImageView.swift in Sources */,
 				EED31358281A71E4007F904A /* ContentView.swift in Sources */,
+				EE258D5E281BAC54008044CC /* BookTour.swift in Sources */,
 				EED31356281A71E4007F904A /* Dark_MapApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
