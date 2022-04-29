@@ -1,0 +1,5 @@
+#extend("master"):
+    #export("body"):
+        <p>Welcome to Focus</p>
+    #endexport
+#endextend

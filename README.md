@@ -10,7 +10,7 @@
 | 04  | [**Swift Pizza**](#swiftpizza)    | A welcome screen for a pizza app.                     |
 | 05  | [**Dark Map**](#darkmap)          | A map screen to implement dark mode.                  |
 | 06  | [**Score It**](#scoreit)          | A two-view score tracker to learn how to share state. |
-| 07  | [**Focus**](#focus)               | A website made with Swift, using Vapor.               |
+| 07  | [**Focus**](#focus)               | A website made with Swift, using Vapor and Leaf.      |
 
 Check the [playground](https://github.com/solygambas/swift-projects/tree/main/playground) if you want to learn Swift syntax first.
 
@@ -145,7 +145,7 @@ Based on [Head First Swift](https://www.amazon.com/Head-First-Swift-Anthony-Gray
 
 ## <a name="focus"></a> 7) Focus
 
-A website made with Swift, using Vapor.
+A website made with Swift, using Vapor and Leaf.
 
 [See 07-focus folder](https://github.com/solygambas/swift-projects/tree/main/07-focus)
 
@@ -161,5 +161,6 @@ A website made with Swift, using Vapor.
 - creating a new project, building and running it in Xcode.
 - generating new routes.
 - handling dynamic parameters.
+- rendering dynamic HTML pages with Leaf.
 
 Based on [Head First Swift](https://www.amazon.com/Head-First-Swift-Anthony-Gray/dp/1491922850) by Jon Manning and Paris Buttfield-Addison (2021).
