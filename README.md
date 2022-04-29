@@ -1,6 +1,6 @@
 # Swift Projects
 
-6 projects to understand Swift core concepts.
+7 projects to understand Swift core concepts.
 
 | #   | Project                           | Description                                           |
 | --- | --------------------------------- | ----------------------------------------------------- |
@@ -10,6 +10,7 @@
 | 04  | [**Swift Pizza**](#swiftpizza)    | A welcome screen for a pizza app.                     |
 | 05  | [**Dark Map**](#darkmap)          | A map screen to implement dark mode.                  |
 | 06  | [**Score It**](#scoreit)          | A two-view score tracker to learn how to share state. |
+| 07  | [**Focus**](#focus)               | A website made with Swift, using Vapor.               |
 
 Check the [playground](https://github.com/solygambas/swift-projects/tree/main/playground) if you want to learn Swift syntax first.
 
@@ -139,5 +140,26 @@ A two-view score tracker to learn how to share state.
 - assembling the first view, holding a @StateObject.
 - creating a second view, using an @EnvironmentObject.
 - navigating between the two views with NavigationView.
+
+Based on [Head First Swift](https://www.amazon.com/Head-First-Swift-Anthony-Gray/dp/1491922850) by Jon Manning and Paris Buttfield-Addison (2021).
+
+## <a name="focus"></a> 7) Focus
+
+A website made with Swift, using Vapor.
+
+[See 07-focus folder](https://github.com/solygambas/swift-projects/tree/main/07-focus)
+
+<!-- <p align="center">
+    <a href="https://github.com/solygambas/swift-projects/tree/main/07-focus">
+        <img src="07-focus/screenshot.png" style="width:528px;max-width:100%;">
+    </a>
+</p> -->
+
+## Features
+
+- installing Vapor Toolbox.
+- creating a new project, building and running it in Xcode.
+- generating new routes.
+- handling dynamic parameters.
 
 Based on [Head First Swift](https://www.amazon.com/Head-First-Swift-Anthony-Gray/dp/1491922850) by Jon Manning and Paris Buttfield-Addison (2021).
