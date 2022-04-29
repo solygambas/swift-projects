@@ -16,33 +16,39 @@ struct ContentView: View {
     )
     
     var body: some View {
-        VStack {
-            VStack (alignment: .leading) {
-                Text("New Delhi")
-                    .font(.system(size: 40))
-                                    .fontWeight(.heavy)
-                                    .foregroundColor(.primary)
-                HStack (alignment: .top, spacing: 20) {
-                                    Image(systemName: "globe.asia.australia.fill").resizable()
-                                        .frame(width: 40, height: 40)
-                                        .foregroundColor(Color(UIColor.systemIndigo))
-                                    VStack (alignment: .leading, spacing: 4) {
-                                        Text("The Best New Delhi Tours")
-                                            .font(.headline)
-                                            .bold()
-                                        Text("Explore the sights of Old and New Delhi.")
-                                            .font(.subheadline)
-                                    }
-                                }
-            }.padding()
-            Map(coordinateRegion: $region)
-                .edgesIgnoringSafeArea(.all)
-            Button(action: {}) {
-                            Text("Book a tour").foregroundColor(.white).bold()
-            }.frame(width: 350, height: 60)
-                            .background(Color(UIColor.systemIndigo))
-                            .cornerRadius(12)
-                            .padding()
+        NavigationView {
+            VStack {
+                VStack (alignment: .leading) {
+                    Text("New Delhi")
+                        .font(.system(size: 40))
+                                        .fontWeight(.heavy)
+                                        .foregroundColor(.primary)
+                    NavigationLink (destination: ImageView()) {
+                        HStack (alignment: .top, spacing: 20) {
+                                            Image(systemName: "globe.asia.australia.fill").resizable()
+                                                .frame(width: 40, height: 40)
+                                                .foregroundColor(Color(UIColor.systemIndigo))
+                                            VStack (alignment: .leading, spacing: 4) {
+                                                Text("The Best New Delhi Tours")
+                                                    .font(.headline)
+                                                    .bold()
+                                                    .accentColor(.primary)
+                                                Text("Explore the sights of Old and New Delhi.")
+                                                    .font(.subheadline)
+                                                    .accentColor(.primary)
+                                            }
+                                        }
+                    }
+                }
+                Map(coordinateRegion: $region)
+                    .edgesIgnoringSafeArea(.all)
+                Button(action: {}) {
+                                Text("Book a tour").foregroundColor(.white).bold()
+                }.frame(width: 350, height: 60)
+                                .background(Color(UIColor.systemIndigo))
+                                .cornerRadius(12)
+                                .padding()
+            }
         }
     }
 }
