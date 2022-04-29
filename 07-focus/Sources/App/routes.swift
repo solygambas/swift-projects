@@ -18,7 +18,19 @@ func routes(_ app: Application) throws {
     }
     
     app.get { req async throws -> View in
-        return try await req.view.render("child", ["title": "Focus"])
+        return try await req.view.render("home", ["title": "Focus"])
+    }
+    
+    app.get("books") { req async throws -> View in
+        struct BookList: Codable {
+            var title = "Books"
+            var books = [
+                "Deep Work by Cal Newport",
+                "Getting Things Done by David Allen",
+                "The Power of Habit by Charles Duhigg"
+            ]
+        }
+        return try await req.view.render("books", BookList())
     }
     
     // Handle params

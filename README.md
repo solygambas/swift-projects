@@ -149,11 +149,11 @@ A website made with Swift, using Vapor and Leaf.
 
 [See 07-focus folder](https://github.com/solygambas/swift-projects/tree/main/07-focus)
 
-<!-- <p align="center">
+<p align="center">
     <a href="https://github.com/solygambas/swift-projects/tree/main/07-focus">
-        <img src="07-focus/screenshot.png" style="width:528px;max-width:100%;">
+        <img src="07-focus/screenshot.png">
     </a>
-</p> -->
+</p>
 
 ## Features
 

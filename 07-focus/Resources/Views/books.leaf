@@ -1,0 +1,11 @@
+#extend("master"):
+    #export("body"):
+        <h1>#(title)</h1>
+        <ul>
+        #for(book in books):
+            <li>#(book)</li>
+        #endfor
+        </ul>
+    <p><a href="/">Home</a></p>
+    #endexport
+#endextend

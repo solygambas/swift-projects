@@ -1,0 +1,6 @@
+#extend("master"):
+    #export("body"):
+        <h1>#(title)</h1>
+    <p><a href="/books">Useful books</a></p>
+    #endexport
+#endextend

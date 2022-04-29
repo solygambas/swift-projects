@@ -2,9 +2,9 @@
 
 A website made with Swift, using Vapor and Leaf.
 
-<!-- <p align="center">
-    <img src="screenshot.png" style="width:528px;max-width:100%;">
-</p> -->
+<p align="center">
+    <img src="screenshot.png">
+</p>
 
 ## Features
 
