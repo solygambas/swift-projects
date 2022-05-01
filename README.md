@@ -1,17 +1,18 @@
 # Swift Projects
 
-8 projects to understand Swift core concepts.
+9 projects to understand Swift core concepts.
 
-| #   | Project                                              | Description                                           |
-| --- | ---------------------------------------------------- | ----------------------------------------------------- |
-| 01  | [**War Card Game**](/01-war-card-game/README.md)     | A card game to learn Swift and SwiftUI.               |
-| 02  | [**Todo List**](/02-todo-list/README.md)             | An app to learn how to use Xcode for Swift.           |
-| 03  | [**Executive Timer**](/03-executive-timer/README.md) | A timer for meetings.                                 |
-| 04  | [**Swift Pizza**](/04-swift-pizza/README.md)         | A welcome screen for a pizza app.                     |
-| 05  | [**Dark Map**](/05-dark-map/README.md)               | A map screen to implement dark mode.                  |
-| 06  | [**Score It**](/06-score-it/README.md)               | A two-view score tracker to learn how to share state. |
-| 07  | [**Focus**](/07-focus/README.md)                     | A website made with Swift, using Vapor and Leaf.      |
-| 08  | [**WeSplit**](/08-wesplit/README.md)                 | A check-sharing app.                                  |
+| #   | Project                                   | Description                                           |
+| --- | ----------------------------------------- | ----------------------------------------------------- |
+| 01  | [**War Card Game**](01-war-card-game)     | A card game to learn Swift and SwiftUI.               |
+| 02  | [**Todo List**](02-todo-list)             | An app to learn how to use Xcode for Swift.           |
+| 03  | [**Executive Timer**](03-executive-timer) | A timer for meetings.                                 |
+| 04  | [**Swift Pizza**](04-swift-pizza)         | A welcome screen for a pizza app.                     |
+| 05  | [**Dark Map**](05-dark-map)               | A map screen to implement dark mode.                  |
+| 06  | [**Score It**](06-score-it)               | A two-view score tracker to learn how to share state. |
+| 07  | [**Focus**](07-focus)                     | A website made with Swift, using Vapor and Leaf.      |
+| 08  | [**WeSplit**](08-wesplit)                 | A check-sharing app.                                  |
+| 09  | [**Guess the Flag**](09-guess-the-flag)   | A guessing game on country flags.                     |
 
 These projects are adapted from various sources:
 
@@ -19,4 +20,4 @@ These projects are adapted from various sources:
 - [Head First Swift](https://www.amazon.com/Head-First-Swift-Anthony-Gray/dp/1491922850) by Jon Manning and Paris Buttfield-Addison (2021)
 - [100 Days of SwiftUI](https://www.hackingwithswift.com/100/swiftui) by Paul Hudson - Hacking with Swift (2022)
 
-Check the [playground](/playground) if you want to learn Swift syntax first.
+Check the [playground](playground) if you want to learn Swift syntax first.
