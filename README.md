@@ -1,18 +1,19 @@
 # Swift Projects
 
-9 projects to understand Swift core concepts.
+10 projects to understand Swift core concepts.
 
-| #   | Project                                   | Description                                           |
-| --- | ----------------------------------------- | ----------------------------------------------------- |
-| 01  | [**War Card Game**](01-war-card-game)     | A card game to learn Swift and SwiftUI.               |
-| 02  | [**Todo List**](02-todo-list)             | An app to learn how to use Xcode for Swift.           |
-| 03  | [**Executive Timer**](03-executive-timer) | A timer for meetings.                                 |
-| 04  | [**Swift Pizza**](04-swift-pizza)         | A welcome screen for a pizza app.                     |
-| 05  | [**Dark Map**](05-dark-map)               | A map screen to implement dark mode.                  |
-| 06  | [**Score It**](06-score-it)               | A two-view score tracker to learn how to share state. |
-| 07  | [**Focus**](07-focus)                     | A website made with Swift, using Vapor and Leaf.      |
-| 08  | [**WeSplit**](08-wesplit)                 | A check-sharing app.                                  |
-| 09  | [**Guess the Flag**](09-guess-the-flag)   | A guessing game on country flags.                     |
+| #   | Project                                      | Description                                                                     |
+| --- | -------------------------------------------- | ------------------------------------------------------------------------------- |
+| 01  | [**War Card Game**](01-war-card-game)        | A card game to learn Swift and SwiftUI.                                         |
+| 02  | [**Todo List**](02-todo-list)                | An app to learn how to use Xcode for Swift.                                     |
+| 03  | [**Executive Timer**](03-executive-timer)    | A timer for meetings.                                                           |
+| 04  | [**Swift Pizza**](04-swift-pizza)            | A welcome screen for a pizza app.                                               |
+| 05  | [**Dark Map**](05-dark-map)                  | A map screen to implement dark mode.                                            |
+| 06  | [**Score It**](06-score-it)                  | A two-view score tracker to learn how to share state.                           |
+| 07  | [**Focus**](07-focus)                        | A website made with Swift, using Vapor and Leaf.                                |
+| 08  | [**WeSplit**](08-wesplit)                    | A check-sharing app.                                                            |
+| 09  | [**Guess the Flag**](09-guess-the-flag)      | A guessing game on country flags.                                               |
+| 10  | [**Views and modifiers**](09-guess-the-flag) | A technique project to learn how to build custom view modifiers and containers. |
 
 These projects are adapted from various sources:
 
