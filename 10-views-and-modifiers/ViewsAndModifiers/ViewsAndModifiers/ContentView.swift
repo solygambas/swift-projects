@@ -38,6 +38,21 @@ extension View {
     }
 }
 
+struct BlueTitle: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.largeTitle)
+            .foregroundColor(.blue)
+            .padding()
+    }
+}
+
+extension View {
+    func blueTitleStyle() -> some View {
+        modifier(BlueTitle())
+    }
+}
+
 struct Watermark: ViewModifier {
     var text: String
     
@@ -157,6 +172,9 @@ struct ContentView: View {
 //        Color.blue
 //            .frame(width: 300, height: 200)
 //            .watermarked(with: "Hacking with Swift")
+//        Text("Blue Title")
+//            .blueTitleStyle()
+        
         
         // custom container
         GridStack(rows: 4, columns: 4) { row, col in
