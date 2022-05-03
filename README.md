@@ -1,6 +1,6 @@
 # Swift Projects
 
-10 projects to understand Swift core concepts.
+11 projects to understand Swift core concepts.
 
 | #   | Project                                           | Description                                                                     |
 | --- | ------------------------------------------------- | ------------------------------------------------------------------------------- |
@@ -14,6 +14,7 @@
 | 08  | [**WeSplit**](08-wesplit)                         | A check-sharing app.                                                            |
 | 09  | [**Guess the Flag**](09-guess-the-flag)           | A guessing game on country flags.                                               |
 | 10  | [**Views and modifiers**](10-views-and-modifiers) | A technique project to learn how to build custom view modifiers and containers. |
+| 11  | [**Rock Paper Scissors**](11-rock-paper-scissors) | A brain training game.                                                          |
 
 These projects are adapted from various sources:
 
