@@ -27,21 +27,27 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             Form {
-                VStack(alignment: .leading, spacing: 0) {
-                    Text("When do you want to wake up?")
-                        .font(.headline)
-                    DatePicker("Please enter a time", selection: $wakeUp, displayedComponents: .hourAndMinute).labelsHidden()
+                Section {
+                    DatePicker("Please enter a time", selection: $wakeUp, displayedComponents: .hourAndMinute)
+                        .labelsHidden()
+                } header: {
+                    Text("When do you want to wake up?").font(.headline)
                 }
-                VStack(alignment: .leading, spacing: 0) {
-                    Text("Desired amount of sleep")
-                        .font(.headline)
+                Section {
                     Stepper("\(sleepAmount.formatted()) hours",
                             value: $sleepAmount, in: 4...12, step: 0.25)
+                } header: {
+                    Text("Desired amount of sleep").font(.headline)
                 }
-                VStack(alignment: .leading, spacing: 0) {
+                Section {
+                    Picker("Number of cups", selection: $coffeeAmount) {
+                                            ForEach(1..<21) {
+                                                Text("\($0) \($0 == 1 ? "cup" : "cups")").tag($0)
+                                            }
+                                        }
+                } header: {
                     Text("Daily coffee intake")
                         .font(.headline)
-                    Stepper(coffeeAmount == 1 ? "1 cup" : "\(coffeeAmount) cups", value: $coffeeAmount, in: 1...20)
                 }
             }
             .alert(alertTitle, isPresented: $showingAlert) {
