@@ -1,6 +1,6 @@
 # Swift Projects
 
-12 projects to understand Swift core concepts.
+13 projects to understand Swift core concepts.
 
 | #   | Project                                           | Description                                                                     |
 | --- | ------------------------------------------------- | ------------------------------------------------------------------------------- |
@@ -16,6 +16,7 @@
 | 10  | [**Views and modifiers**](10-views-and-modifiers) | A technique project to learn how to build custom view modifiers and containers. |
 | 11  | [**Rock Paper Scissors**](11-rock-paper-scissors) | A brain training game.                                                          |
 | 12  | [**BetterRest**](12-betterrest)                   | An app to help coffee drinkers sleep well, using Core ML.                       |
+| 13  | [**Word Scramble**](13-word-scramble)             | A game to generate new words out of a random eight-letter word.                 |
 
 These projects are adapted from various sources:
 
