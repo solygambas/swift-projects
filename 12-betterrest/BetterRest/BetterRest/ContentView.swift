@@ -26,39 +26,57 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            Form {
-                Section {
-                    DatePicker("Please enter a time", selection: $wakeUp, displayedComponents: .hourAndMinute)
-                        .labelsHidden()
-                } header: {
-                    Text("When do you want to wake up?").font(.headline)
+            VStack {
+                Form {
+                    Section {
+                        DatePicker("Please enter a time", selection: $wakeUp, displayedComponents: .hourAndMinute)
+                            .labelsHidden()
+                            .onChange(of: wakeUp) { _ in
+                                calculateBedtime()
+                            }
+                    } header: {
+                        Text("When do you want to wake up?").font(.headline)
+                    }
+                    Section {
+                        Stepper("\(sleepAmount.formatted()) hours",
+                                value: $sleepAmount, in: 4...12, step: 0.25).onChange(of: sleepAmount) { _ in
+                            calculateBedtime()
+                        }
+                    } header: {
+                        Text("Desired amount of sleep").font(.headline)
+                    }
+                    Section {
+                        Picker("Number of cups", selection: $coffeeAmount) {
+                                                ForEach(1..<21) {
+                                                    Text("\($0) \($0 == 1 ? "cup" : "cups")").tag($0)
+                                                }
+                                            }.onChange(of: coffeeAmount) { _ in
+                            calculateBedtime()
+                        }
+                    } header: {
+                        Text("Daily coffee intake")
+                            .font(.headline)
+                    }
                 }
-                Section {
-                    Stepper("\(sleepAmount.formatted()) hours",
-                            value: $sleepAmount, in: 4...12, step: 0.25)
-                } header: {
-                    Text("Desired amount of sleep").font(.headline)
-                }
-                Section {
-                    Picker("Number of cups", selection: $coffeeAmount) {
-                                            ForEach(1..<21) {
-                                                Text("\($0) \($0 == 1 ? "cup" : "cups")").tag($0)
-                                            }
-                                        }
-                } header: {
-                    Text("Daily coffee intake")
-                        .font(.headline)
-                }
+                Spacer()
+                VStack {
+                    Text(alertTitle).font(.headline.bold())
+                    Text(alertMessage).font(.title)
+                    
+                }.padding()
+                Spacer()
+                Spacer()
+                Spacer()
             }
-            .alert(alertTitle, isPresented: $showingAlert) {
-                Button("OK") {}
-            } message: {
-                Text(alertMessage)
-            }
+//            .alert(alertTitle, isPresented: $showingAlert) {
+//                Button("OK") {}
+//            } message: {
+//                Text(alertMessage)
+//            }
             .navigationTitle("BetterRest")
-                .toolbar {
-                    Button("Calculate", action: calculateBedtime)
-                }
+//                .toolbar {
+//                    Button("Calculate", action: calculateBedtime)
+//                }
         }
     }
     
