@@ -27,6 +27,10 @@ struct ContentView: View {
     @State private var scoreTitle = ""
     @State private var score = 0
     @State private var round = 0
+    @State private var selectedFlag = ""
+    @State private var degreesAmount = 0.0
+    @State private var opacityLevel = 1.0
+    @State private var animationAmount = 1.0
     
     var body: some View {
         ZStack {
@@ -52,13 +56,28 @@ struct ContentView: View {
                     }
                     ForEach(0..<3) { number in
                         Button {
+                            selectedFlag = countries[number]
                             flagTapped(number)
+                            withAnimation() {
+                                degreesAmount += 360
+                                opacityLevel -= 0.75
+                                animationAmount = 0
+                            }
+                            
                         } label: {
 //                            Image(countries[number])
 //                                .renderingMode(.original)
 //                                .clipShape(Capsule())
 //                                .shadow(radius: 5)
-                            FlagImage(country: countries[number])
+                            //FlagImage(country: countries[number])
+                                
+                           Image(countries[number])
+                                .renderingMode(.original)
+                                .clipShape(Capsule())
+                                .shadow(radius:5)
+                                .rotation3DEffect(.degrees( selectedFlag == countries[number] ? degreesAmount : 0), axis:(x:0, y:1, z:0))
+                                .opacity(selectedFlag == countries[number] ? 1.0 : opacityLevel)
+                                .scaleEffect(selectedFlag == countries[number] ? 1.0 : animationAmount)
                         }
                     }
                 }
@@ -99,6 +118,8 @@ struct ContentView: View {
     }
     
     func askQuestion() {
+        opacityLevel = 1.0
+        animationAmount = 1.0
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
     }

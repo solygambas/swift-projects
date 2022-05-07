@@ -13,6 +13,6 @@ A guessing game on country flags.
 - displaying buttons and images.
 - showing the player's score with an alert.
 - stacking up buttons.
-- styling the flags.
+- styling and animating the flags.
 
 Based on [100 Days of SwiftUI](https://www.hackingwithswift.com/100/swiftui) by Paul Hudson - Hacking with Swift (2022).
