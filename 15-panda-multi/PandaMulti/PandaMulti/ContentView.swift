@@ -28,7 +28,6 @@ struct ContentView: View {
         NavigationView {
             VStack() {
                 if (!isGameActive) {
-                    Spacer()
                     Form {
                         Section {
                             Stepper("Up to... \(upTo)",
@@ -46,9 +45,12 @@ struct ContentView: View {
                         Button("Let's play") {
                             generateQuestions()
                         }
+                        .font(.title.bold())
+                        .foregroundColor(.white)
+                                    .padding()
+                                    .background(Color.accentColor)
+                                    .cornerRadius(8)
                     }
-                    .frame(maxHeight: .infinity)
-                    Spacer()
                 } else {
                     Form {
                         Section {
@@ -56,15 +58,20 @@ struct ContentView: View {
                                                     .keyboardType(.numberPad)
                                 Button("Submit") {
                                     handleAnswer()
-                                }
+                                }.font(.title.bold())
+                                .foregroundColor(.white)
+                                            .padding()
+                                            .background(Color.accentColor)
+                                            .cornerRadius(8)
                                 
                         } header: {
-                            Text("\(questions[questionNumber].text)").font(.headline)
+                            Text("\(questions[questionNumber].text)").font(.title.bold())
                     }
                     }
                     if (showHelp) {
                         ScrollView {
                             Text("Help")
+                                .font(.headline.bold())
                             LazyVGrid(columns: [GridItem(.adaptive(minimum: 50))], spacing: 10) {
                                             ForEach(1...questions[questionNumber].answer, id: \.self) { _ in
                                                 Image("panda")
