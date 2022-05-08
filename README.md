@@ -18,6 +18,7 @@
 | 12  | [**BetterRest**](12-betterrest)                   | An app to help coffee drinkers sleep well, using Core ML.                       |
 | 13  | [**Word Scramble**](13-word-scramble)             | A game to generate new words out of a random eight-letter word.                 |
 | 14  | [**Animations**](14-animations)                   | A technique project to learn how to use animations.                             |
+| 15  | [**Panda Multi**](15-panda-multi)                 | An edutainment app to help kids learn multiplication.                           |
 
 These projects are adapted from various sources:
 
