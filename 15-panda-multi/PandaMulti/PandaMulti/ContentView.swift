@@ -22,47 +22,80 @@ struct ContentView: View {
     @State private var answer = ""
     @State private var score = 0
     @State private var showResult = false
+    @State private var showHelp = false
     
     var body: some View {
-        VStack {
-            if (!isGameActive) {
-                Form {
-                    Section {
-                        Stepper("Up to... \(upTo)",
-                        value: $upTo, in: 2...12, step: 1)
-                    } header: {
-                        Text("Which multiplication tables do you want to practice?").font(.headline)
-                }
-                    Section {
-                        // add buttons
-                        Stepper("Give me \(questionTotal) questions",
-                        value: $questionTotal, in: 5...20, step: 5)
-                    } header: {
-                        Text("How many questions do you want?").font(.headline)
-                }
-                    Button("Let's play") {
-                        generateQuestions()
+        NavigationView {
+            VStack() {
+                if (!isGameActive) {
+                    Spacer()
+                    Form {
+                        Section {
+                            Stepper("Up to... \(upTo)",
+                            value: $upTo, in: 2...12, step: 1)
+                        } header: {
+                            Text("Which multiplication tables do you want to practice?").font(.headline)
+                    }
+                        Section {
+                            // add buttons
+                            Stepper("Give me \(questionTotal) questions",
+                            value: $questionTotal, in: 5...20, step: 5)
+                        } header: {
+                            Text("How many questions do you want?").font(.headline)
+                    }
+                        Button("Let's play") {
+                            generateQuestions()
+                        }
+                    }
+                    .frame(maxHeight: .infinity)
+                    Spacer()
+                } else {
+                    Form {
+                        Section {
+                            TextField("Answer", text: $answer)
+                                                    .keyboardType(.numberPad)
+                                Button("Submit") {
+                                    handleAnswer()
+                                }
+                                
+                        } header: {
+                            Text("\(questions[questionNumber].text)").font(.headline)
+                    }
+                    }
+                    if (showHelp) {
+                        ScrollView {
+                            Text("Help")
+                            LazyVGrid(columns: [GridItem(.adaptive(minimum: 50))], spacing: 10) {
+                                            ForEach(1...questions[questionNumber].answer, id: \.self) { _ in
+                                                Image("panda")
+                                                    .resizable()
+                                                .aspectRatio(contentMode: .fit)
+                                            }
+                                        }
+                                        .padding(.horizontal)
+                        }
                     }
                 }
-            } else {
-                Form {
-                    Section {
-                        TextField("Answer", text: $answer)
-                                                .keyboardType(.numberPad)
-                        Button("Submit") {
-                            handleAnswer()
-                        }
-                    } header: {
-                        Text("\(questions[questionNumber].text)").font(.headline)
-                }
-                }
             }
+            .navigationTitle("Panda Multi")
+            
+                .toolbar {
+                    if (isGameActive) {
+                        Button(showHelp ? "Hide Panda" : "Ask Panda") {
+                            withAnimation {
+                                showHelp.toggle()
+                            }
+                                               }
+                                       }
+            }
+            
         }
+        
         .alert("Final score", isPresented: $showResult) {
-                    Button("Restart", action: reset)
-                } message: {
-                    Text("Your final score is \(score)/\(questionTotal)")
-                }
+            Button("Restart", action: reset)
+        } message: {
+            Text("Your final score is \(score)/\(questionTotal)")
+        }
     }
     
     func generateQuestions() {
