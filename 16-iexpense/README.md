@@ -14,5 +14,6 @@ An expense tracker that separates personal costs from business costs.
 - working with Identifiable items.
 - storing user settings with UserDefaults.
 - archiving Swift objects with Codable.
+- defining color assets.
 
 Based on [100 Days of SwiftUI](https://www.hackingwithswift.com/100/swiftui) by Paul Hudson - Hacking with Swift (2022).

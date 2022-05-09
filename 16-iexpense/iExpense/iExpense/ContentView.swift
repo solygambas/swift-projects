@@ -35,6 +35,13 @@ class Expenses: ObservableObject {
     }
 }
 
+extension Color {
+    static let littleExpenseColor = Color("expenseSmallColor")
+    static let normalExpenseColor =
+    Color("expenseStandardColor")
+    static let hugeExpenseColor = Color("expenseHighColor")
+}
+
 struct ContentView: View {
     @StateObject var expenses = Expenses()
     @State private var showingAddExpense = false
@@ -50,7 +57,9 @@ struct ContentView: View {
                             Text(item.type)
                         }
                         Spacer()
-                        Text(item.amount, format: .currency(code: "USD"))
+                        Text(item.amount, format: .currency(code: Locale.current.currencyCode ?? "USD"))
+                            .foregroundColor(item.amount <= 10 ?.littleExpenseColor:
+                                item.amount <= 100 ? .normalExpenseColor : .hugeExpenseColor)
                     }
                 }
                 .onDelete(perform: removeItems)
