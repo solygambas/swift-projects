@@ -12,6 +12,7 @@
 		EE2001342828E04B0029C637 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE2001332828E04B0029C637 /* Assets.xcassets */; };
 		EE2001372828E04B0029C637 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE2001362828E04B0029C637 /* Preview Assets.xcassets */; };
 		EE20013E2828F1710029C637 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20013D2828F1710029C637 /* TestView.swift */; };
+		EE200140282910760029C637 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE20013F282910760029C637 /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		EE2001332828E04B0029C637 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE2001362828E04B0029C637 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE20013D2828F1710029C637 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		EE20013F282910760029C637 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				EE20013D2828F1710029C637 /* TestView.swift */,
 				EE2001332828E04B0029C637 /* Assets.xcassets */,
 				EE2001352828E04B0029C637 /* Preview Content */,
+				EE20013F282910760029C637 /* AddView.swift */,
 			);
 			path = iExpense;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE200140282910760029C637 /* AddView.swift in Sources */,
 				EE20013E2828F1710029C637 /* TestView.swift in Sources */,
 				EE2001322828E0470029C637 /* ContentView.swift in Sources */,
 				EE2001302828E0470029C637 /* iExpenseApp.swift in Sources */,

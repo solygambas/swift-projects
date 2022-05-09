@@ -11,6 +11,7 @@ An expense tracker that separates personal costs from business costs.
 - sharing state with @StateObject.
 - showing and hiding views.
 - deleting items using onDelete().
+- working with Identifiable items.
 - storing user settings with UserDefaults.
 - archiving Swift objects with Codable.
 

@@ -1,6 +1,6 @@
 # Swift Projects
 
-16 projects to understand Swift core concepts.
+16 projects to understand Swift and SwiftUI core concepts.
 
 | #   | Project                                           | Description                                                                     |
 | --- | ------------------------------------------------- | ------------------------------------------------------------------------------- |
