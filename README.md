@@ -1,6 +1,6 @@
 # Swift Projects
 
-15 projects to understand Swift core concepts.
+16 projects to understand Swift core concepts.
 
 | #   | Project                                           | Description                                                                     |
 | --- | ------------------------------------------------- | ------------------------------------------------------------------------------- |
@@ -19,6 +19,7 @@
 | 13  | [**Word Scramble**](13-word-scramble)             | A game to generate new words out of a random eight-letter word.                 |
 | 14  | [**Animations**](14-animations)                   | A technique project to learn how to use animations.                             |
 | 15  | [**Panda Multi**](15-panda-multi)                 | An edutainment app to help kids learn multiplication.                           |
+| 16  | [**iExpense**](16-iexpense)                       | An expense tracker that separates personal costs from business costs.           |
 
 These projects are adapted from various sources:
 
