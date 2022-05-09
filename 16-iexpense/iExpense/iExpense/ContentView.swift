@@ -23,6 +23,12 @@ class Expenses: ObservableObject {
             }
         }
     }
+    var personalItems: [ExpenseItem] {
+        items.filter { $0.type == "Personal"}
+    }
+    var businessItems: [ExpenseItem] {
+        items.filter { $0.type == "Business"}
+    }
     
     init() {
         if let savedItems = UserDefaults.standard.data(forKey: "Items") {
@@ -45,24 +51,23 @@ extension Color {
 struct ContentView: View {
     @StateObject var expenses = Expenses()
     @State private var showingAddExpense = false
+    let types = ["Business", "Personal"]
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(expenses.items) { item in
-                    HStack {
-                        VStack(alignment: .leading) {
-                            Text(item.name)
-                                .font(.headline)
-                            Text(item.type)
-                        }
-                        Spacer()
-                        Text(item.amount, format: .currency(code: Locale.current.currencyCode ?? "USD"))
-                            .foregroundColor(item.amount <= 10 ?.littleExpenseColor:
-                                item.amount <= 100 ? .normalExpenseColor : .hugeExpenseColor)
+                Section(header: Text("Personal")) {
+                    ForEach(expenses.personalItems) { item in
+                        ExpensesView(item: item)
                     }
+                    .onDelete(perform: removeItems)
                 }
-                .onDelete(perform: removeItems)
+                Section(header: Text("Business")) {
+                    ForEach(expenses.businessItems) { item in
+                        ExpensesView(item: item)
+                    }
+                    .onDelete(perform: removeItems)
+                }
             }
             .navigationTitle("iExpense")
             .toolbar {
