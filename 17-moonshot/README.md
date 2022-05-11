@@ -2,9 +2,9 @@
 
 An app about the missions and astronauts part of Apollo space program.
 
-<!-- <p align="center">
+<p align="center">
     <img src="screenshot.png" style="width:528px;max-width:100%;">
-</p> -->
+</p>
 
 ## Features
 
@@ -16,5 +16,7 @@ An app about the missions and astronauts part of Apollo space program.
 - laying out views in a scrolling grid.
 - formatting the mission view.
 - showing the mission details.
+- showing the astronaut details.
+- toggling between showing missions as a grid and as a list.
 
 Based on [100 Days of SwiftUI](https://www.hackingwithswift.com/100/swiftui) by Paul Hudson - Hacking with Swift (2022).
