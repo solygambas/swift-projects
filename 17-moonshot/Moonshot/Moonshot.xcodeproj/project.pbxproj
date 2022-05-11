@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE33A62E282B7EE600BD4CB2 /* AstronautView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE33A62D282B7EE600BD4CB2 /* AstronautView.swift */; };
 		EE7BE581282A26B6001DECCF /* MoonshotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7BE580282A26B6001DECCF /* MoonshotApp.swift */; };
 		EE7BE583282A26B6001DECCF /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7BE582282A26B6001DECCF /* TestView.swift */; };
 		EE7BE585282A26BA001DECCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7BE584282A26BA001DECCF /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE33A62D282B7EE600BD4CB2 /* AstronautView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautView.swift; sourceTree = "<group>"; };
 		EE7BE57D282A26B6001DECCF /* Moonshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moonshot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7BE580282A26B6001DECCF /* MoonshotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonshotApp.swift; sourceTree = "<group>"; };
 		EE7BE582282A26B6001DECCF /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				EE7BE582282A26B6001DECCF /* TestView.swift */,
 				EE7BE58E282A361A001DECCF /* ContentView.swift */,
 				EE7BE5A0282A6DA3001DECCF /* MissionView.swift */,
+				EE33A62D282B7EE600BD4CB2 /* AstronautView.swift */,
 				EE7BE584282A26BA001DECCF /* Assets.xcassets */,
 				EE7BE586282A26BA001DECCF /* Preview Content */,
 				EE7BE59C282A3CA4001DECCF /* Mission.swift */,
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE7BE59D282A3CA4001DECCF /* Mission.swift in Sources */,
+				EE33A62E282B7EE600BD4CB2 /* AstronautView.swift in Sources */,
 				EE7BE5A1282A6DA3001DECCF /* MissionView.swift in Sources */,
 				EE7BE583282A26B6001DECCF /* TestView.swift in Sources */,
 				EE7BE59F282A6AEA001DECCF /* Color-Theme.swift in Sources */,
