@@ -72,9 +72,14 @@ struct ContentView: View {
 ////            .stroke(.blue, lineWidth: 40)
 //            .strokeBorder(.blue, lineWidth: 40)
         
-        Arc(startAngle: .degrees(-90), endAngle: .degrees(90), clockwise: true)
-            .strokeBorder(.blue, lineWidth: 40)
-                    
+//        Arc(startAngle: .degrees(-90), endAngle: .degrees(90), clockwise: true)
+//            .strokeBorder(.blue, lineWidth: 40)
+          
+        // CGAffineTransform
+//        FlowerView()
+        
+        // imagePaint
+        ImagePaintView()
                     
     }
 }
