@@ -1,6 +1,6 @@
 # Swift Projects
 
-17 projects to understand Swift and SwiftUI core concepts.
+18 projects to understand Swift and SwiftUI core concepts.
 
 | #   | Project                                           | Description                                                                     |
 | --- | ------------------------------------------------- | ------------------------------------------------------------------------------- |
@@ -21,6 +21,7 @@
 | 15  | [**Panda Multi**](15-panda-multi)                 | An edutainment app to help kids learn multiplication.                           |
 | 16  | [**iExpense**](16-iexpense)                       | An expense tracker that separates personal costs from business costs.           |
 | 17  | [**Moonshot**](17-moonshot)                       | An app about the missions and astronauts part of Apollo space program.          |
+| 18  | [**Drawing**](18-drawing)                         | A technique project focusing on drawing.                                        |
 
 These projects are adapted from various sources:
 
