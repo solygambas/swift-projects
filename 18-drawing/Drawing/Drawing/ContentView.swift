@@ -45,6 +45,8 @@ struct Arc: InsettableShape {
 }
 
 struct ContentView: View {
+    @State private var colorCycle = 0.0
+    
     var body: some View {
         // paths
 //        Path { path in
@@ -79,8 +81,14 @@ struct ContentView: View {
 //        FlowerView()
         
         // imagePaint
-        ImagePaintView()
-                    
+        //ImagePaintView()
+        
+        // Metal
+        VStack {
+            ColorCyclingCircle(amount: colorCycle)
+                .frame(width: 300, height: 300)
+            Slider(value: $colorCycle)
+        }
     }
 }
 
