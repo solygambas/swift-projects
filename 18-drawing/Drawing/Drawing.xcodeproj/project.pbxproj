@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE13F2AB282E2790005421B8 /* AnimateSimpleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE13F2AA282E2790005421B8 /* AnimateSimpleShape.swift */; };
+		EE13F2AD282E2C78005421B8 /* AnimateComplexShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE13F2AC282E2C78005421B8 /* AnimateComplexShape.swift */; };
 		EEEE3873282CCB3A0039DA0B /* DrawingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEE3872282CCB3A0039DA0B /* DrawingApp.swift */; };
 		EEEE3875282CCB3A0039DA0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEE3874282CCB3A0039DA0B /* ContentView.swift */; };
 		EEEE3877282CCB3F0039DA0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEEE3876282CCB3F0039DA0B /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE13F2AA282E2790005421B8 /* AnimateSimpleShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateSimpleShape.swift; sourceTree = "<group>"; };
+		EE13F2AC282E2C78005421B8 /* AnimateComplexShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateComplexShape.swift; sourceTree = "<group>"; };
 		EEEE386F282CCB3A0039DA0B /* Drawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEEE3872282CCB3A0039DA0B /* DrawingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingApp.swift; sourceTree = "<group>"; };
 		EEEE3874282CCB3A0039DA0B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,8 +62,10 @@
 			isa = PBXGroup;
 			children = (
 				EEEE3884282D007C0039DA0B /* ColorCyclingCircle.swift */,
+				EE13F2AC282E2C78005421B8 /* AnimateComplexShape.swift */,
 				EEEE3872282CCB3A0039DA0B /* DrawingApp.swift */,
 				EEEE3874282CCB3A0039DA0B /* ContentView.swift */,
+				EE13F2AA282E2790005421B8 /* AnimateSimpleShape.swift */,
 				EEEE3882282CE75C0039DA0B /* ImagePaintView.swift */,
 				EEEE3880282CDCE80039DA0B /* FlowerView.swift */,
 				EEEE3876282CCB3F0039DA0B /* Assets.xcassets */,
@@ -147,10 +153,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEEE3885282D007C0039DA0B /* ColorCyclingCircle.swift in Sources */,
+				EE13F2AB282E2790005421B8 /* AnimateSimpleShape.swift in Sources */,
 				EEEE3875282CCB3A0039DA0B /* ContentView.swift in Sources */,
 				EEEE3883282CE75C0039DA0B /* ImagePaintView.swift in Sources */,
 				EEEE3881282CDCE80039DA0B /* FlowerView.swift in Sources */,
 				EEEE3873282CCB3A0039DA0B /* DrawingApp.swift in Sources */,
+				EE13F2AD282E2C78005421B8 /* AnimateComplexShape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
