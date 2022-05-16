@@ -17,7 +17,8 @@ struct ColorCyclingCircle: View {
     var body: some View {
         ZStack {
             ForEach(0..<steps) { value in
-                Circle()
+                //Circle()
+                Rectangle()
                     .inset(by: Double(value))
                     .strokeBorder(LinearGradient(gradient: Gradient(colors: [
                         color(for: value, brightness: 1),

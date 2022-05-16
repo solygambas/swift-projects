@@ -45,7 +45,7 @@ struct Arc: InsettableShape {
 }
 
 struct ContentView: View {
-    //@State private var colorCycle = 0.0
+    @State private var colorCycle = 0.0
     @State private var amount = 0.0
     
     var body: some View {
@@ -85,11 +85,11 @@ struct ContentView: View {
         //ImagePaintView()
         
         // Metal
-//        VStack {
-//            ColorCyclingCircle(amount: colorCycle)
-//                .frame(width: 300, height: 300)
-//            Slider(value: $colorCycle)
-//        }
+        VStack {
+            ColorCyclingCircle(amount: colorCycle)
+                .frame(width: 300, height: 300)
+            Slider(value: $colorCycle)
+        }
         
         // special effects
 //        ZStack {
@@ -147,7 +147,10 @@ struct ContentView: View {
         // AnimateComplexShape()
         
         // spirograph
-        SpirographView()
+        // SpirographView()
+        
+        // arrow
+        //ArrowShapeView()
     }
 }
 
