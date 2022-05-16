@@ -1,6 +1,6 @@
 # Swift Projects
 
-18 projects to understand Swift and SwiftUI core concepts.
+19 projects to understand Swift and SwiftUI core concepts.
 
 | #   | Project                                           | Description                                                                     |
 | --- | ------------------------------------------------- | ------------------------------------------------------------------------------- |
@@ -22,6 +22,7 @@
 | 16  | [**iExpense**](16-iexpense)                       | An expense tracker that separates personal costs from business costs.           |
 | 17  | [**Moonshot**](17-moonshot)                       | An app about the missions and astronauts part of Apollo space program.          |
 | 18  | [**Drawing**](18-drawing)                         | A technique project focusing on drawing.                                        |
+| 19  | [**Momentum**](19-momentum)                       | A habit-tracking app.                                                           |
 
 These projects are adapted from various sources:
 
