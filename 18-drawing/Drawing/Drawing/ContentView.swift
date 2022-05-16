@@ -144,7 +144,10 @@ struct ContentView: View {
         // AnimateSimpleShape()
         
         // complex shapes
-        AnimateComplexShape()
+        // AnimateComplexShape()
+        
+        // spirograph
+        SpirographView()
     }
 }
 
