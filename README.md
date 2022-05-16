@@ -1,6 +1,6 @@
 # Swift Projects
 
-19 projects to understand Swift and SwiftUI core concepts.
+20 projects to understand Swift and SwiftUI core concepts.
 
 | #   | Project                                           | Description                                                                     |
 | --- | ------------------------------------------------- | ------------------------------------------------------------------------------- |
@@ -23,6 +23,7 @@
 | 17  | [**Moonshot**](17-moonshot)                       | An app about the missions and astronauts part of Apollo space program.          |
 | 18  | [**Drawing**](18-drawing)                         | A technique project focusing on drawing.                                        |
 | 19  | [**Momentum**](19-momentum)                       | A habit-tracking app.                                                           |
+| 20  | [**Cupcake Corner**](20-cupcake-corner)           | A multi-screen app for ordering cupcakes.                                       |
 
 These projects are adapted from various sources:
 
