@@ -18,6 +18,7 @@
 		EEBDD9862833CC2400D16BD6 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBDD9852833CC2400D16BD6 /* AddBookView.swift */; };
 		EEF226A32834C731002CF680 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF226A22834C731002CF680 /* RatingView.swift */; };
 		EEF226A52834C9DA002CF680 /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF226A42834C9DA002CF680 /* EmojiRatingView.swift */; };
+		EEF226A728350843002CF680 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF226A628350843002CF680 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		EEBDD9852833CC2400D16BD6 /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
 		EEF226A22834C731002CF680 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		EEF226A42834C9DA002CF680 /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
+		EEF226A628350843002CF680 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				EEBDD9722833ACFE00D16BD6 /* Assets.xcassets */,
 				EEBDD9742833ACFE00D16BD6 /* Preview Content */,
 				EEF226A22834C731002CF680 /* RatingView.swift */,
+				EEF226A628350843002CF680 /* DetailView.swift */,
 			);
 			path = Bookworm;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				EEBDD9862833CC2400D16BD6 /* AddBookView.swift in Sources */,
 				EEF226A52834C9DA002CF680 /* EmojiRatingView.swift in Sources */,
 				EEBDD9822833C1A100D16BD6 /* DataController.swift in Sources */,
+				EEF226A728350843002CF680 /* DetailView.swift in Sources */,
 				EEBDD9712833ACF400D16BD6 /* StudentView.swift in Sources */,
 				EEF226A32834C731002CF680 /* RatingView.swift in Sources */,
 				EEBDD9842833CB5C00D16BD6 /* ContentView.swift in Sources */,

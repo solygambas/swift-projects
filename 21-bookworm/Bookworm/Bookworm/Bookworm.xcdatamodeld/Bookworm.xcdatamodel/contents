@@ -13,7 +13,7 @@
         <attribute name="name" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Student" positionX="-63" positionY="-18" width="128" height="59"/>
         <element name="Book" positionX="-54" positionY="9" width="128" height="119"/>
+        <element name="Student" positionX="-63" positionY="-18" width="128" height="59"/>
     </elements>
 </model>
