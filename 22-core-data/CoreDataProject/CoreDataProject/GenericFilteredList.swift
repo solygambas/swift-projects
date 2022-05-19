@@ -11,6 +11,12 @@
 import CoreData
 import SwiftUI
 
+enum Filter {
+    case equal
+    case beginswith
+    case contains
+}
+
 struct GenericFilteredList<T: NSManagedObject, Content: View>: View {
     @FetchRequest var fetchRequest: FetchedResults<T>
     let content: (T) -> Content
@@ -21,8 +27,18 @@ struct GenericFilteredList<T: NSManagedObject, Content: View>: View {
         }
     }
     
-    init(filterKey: String, filterValue: String, @ViewBuilder content: @escaping (T) -> Content) {
-        _fetchRequest = FetchRequest<T>(sortDescriptors: [], predicate: NSPredicate(format: "%K BEGINSWITH %@", filterKey, filterValue))
+    init(filterKey: String, filterValue: String, filter: Filter, descriptors: [SortDescriptor<T>], @ViewBuilder content: @escaping (T) -> Content) {
+        var filteredBy: String
+        switch filter {
+        case .equal:
+            filteredBy = "=="
+        case .beginswith:
+            filteredBy = "BEGINSWITH[c]"
+        case .contains:
+            filteredBy = "CONTAINS[c]"
+        }
+        
+        _fetchRequest = FetchRequest<T>(sortDescriptors: descriptors, predicate: NSPredicate(format: "%K \(filteredBy) %@", filterKey, filterValue))
         self.content = content
     }
 }
