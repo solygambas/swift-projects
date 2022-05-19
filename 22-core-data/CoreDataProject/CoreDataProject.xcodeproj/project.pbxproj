@@ -19,6 +19,10 @@
 		EE82C29728365219008D1B9B /* Singer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE82C29528365219008D1B9B /* Singer+CoreDataProperties.swift */; };
 		EE82C299283653E9008D1B9B /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE82C298283653E9008D1B9B /* FilteredList.swift */; };
 		EE82C29B28365BC7008D1B9B /* GenericFilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE82C29A28365BC7008D1B9B /* GenericFilteredList.swift */; };
+		EE82C2A028366003008D1B9B /* Country+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE82C29C28366003008D1B9B /* Country+CoreDataClass.swift */; };
+		EE82C2A128366003008D1B9B /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE82C29D28366003008D1B9B /* Country+CoreDataProperties.swift */; };
+		EE82C2A228366003008D1B9B /* Candy+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE82C29E28366003008D1B9B /* Candy+CoreDataClass.swift */; };
+		EE82C2A328366003008D1B9B /* Candy+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE82C29F28366003008D1B9B /* Candy+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,10 @@
 		EE82C29528365219008D1B9B /* Singer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		EE82C298283653E9008D1B9B /* FilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredList.swift; sourceTree = "<group>"; };
 		EE82C29A28365BC7008D1B9B /* GenericFilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericFilteredList.swift; sourceTree = "<group>"; };
+		EE82C29C28366003008D1B9B /* Country+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EE82C29D28366003008D1B9B /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EE82C29E28366003008D1B9B /* Candy+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EE82C29F28366003008D1B9B /* Candy+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +75,10 @@
 		EE82C270283614D2008D1B9B /* CoreDataProject */ = {
 			isa = PBXGroup;
 			children = (
+				EE82C29C28366003008D1B9B /* Country+CoreDataClass.swift */,
+				EE82C29D28366003008D1B9B /* Country+CoreDataProperties.swift */,
+				EE82C29E28366003008D1B9B /* Candy+CoreDataClass.swift */,
+				EE82C29F28366003008D1B9B /* Candy+CoreDataProperties.swift */,
 				EE82C29428365219008D1B9B /* Singer+CoreDataClass.swift */,
 				EE82C29528365219008D1B9B /* Singer+CoreDataProperties.swift */,
 				EE82C28C28362140008D1B9B /* Movie+CoreDataClass.swift */,
@@ -165,10 +177,14 @@
 				EE82C29628365219008D1B9B /* Singer+CoreDataClass.swift in Sources */,
 				EE82C274283614D2008D1B9B /* ContentView.swift in Sources */,
 				EE82C299283653E9008D1B9B /* FilteredList.swift in Sources */,
+				EE82C2A028366003008D1B9B /* Country+CoreDataClass.swift in Sources */,
 				EE82C28028361668008D1B9B /* DataController.swift in Sources */,
 				EE82C283283616AE008D1B9B /* CoreDataProject.xcdatamodeld in Sources */,
+				EE82C2A228366003008D1B9B /* Candy+CoreDataClass.swift in Sources */,
 				EE82C29028362140008D1B9B /* Movie+CoreDataClass.swift in Sources */,
+				EE82C2A128366003008D1B9B /* Country+CoreDataProperties.swift in Sources */,
 				EE82C29728365219008D1B9B /* Singer+CoreDataProperties.swift in Sources */,
+				EE82C2A328366003008D1B9B /* Candy+CoreDataProperties.swift in Sources */,
 				EE82C29128362140008D1B9B /* Movie+CoreDataProperties.swift in Sources */,
 				EE82C272283614D2008D1B9B /* CoreDataProjectApp.swift in Sources */,
 			);
