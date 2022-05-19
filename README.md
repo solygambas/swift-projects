@@ -1,6 +1,6 @@
 # Swift Projects
 
-21 projects to understand Swift and SwiftUI core concepts.
+22 projects to understand Swift and SwiftUI core concepts.
 
 | #   | Project                                           | Description                                                                     |
 | --- | ------------------------------------------------- | ------------------------------------------------------------------------------- |
@@ -25,6 +25,7 @@
 | 19  | [**Momentum**](19-momentum)                       | A habit-tracking app.                                                           |
 | 20  | [**Cupcake Corner**](20-cupcake-corner)           | A multi-screen app for ordering cupcakes.                                       |
 | 21  | [**Bookworm**](21-bookworm)                       | A reading tracker app, using Core Data.                                         |
+| 22  | [**Core Data**](22-core-data)                     | A technique project focusing on Core Data.                                      |
 
 These projects are adapted from various sources:
 
