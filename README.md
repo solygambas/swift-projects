@@ -26,7 +26,7 @@
 | 20  | [**Cupcake Corner**](20-cupcake-corner)           | A multi-screen app for ordering cupcakes.                                       |
 | 21  | [**Bookworm**](21-bookworm)                       | A reading tracker app, using Core Data.                                         |
 | 22  | [**Core Data**](22-core-data)                     | A technique project focusing on Core Data.                                      |
-| 23  | [**Profiles**](23-profiles)                       | A list of users to download some JSON.                                          |
+| 23  | [**Profiles**](23-profiles)                       | A list of users to download some JSON and store it using Core Data.             |
 
 These projects are adapted from various sources:
 

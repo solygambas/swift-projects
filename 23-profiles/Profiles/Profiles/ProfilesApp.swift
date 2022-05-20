@@ -10,9 +10,12 @@ import SwiftUI
 
 @main
 struct ProfilesApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
+    @StateObject private var dataController = DataController()
+        
+        var body: some Scene {
+            WindowGroup {
+                ContentView()
+                    .environment(\.managedObjectContext, dataController.container.viewContext)
+            }
         }
-    }
 }
