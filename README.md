@@ -1,6 +1,6 @@
 # Swift Projects
 
-22 projects to understand Swift and SwiftUI core concepts.
+23 projects to understand Swift and SwiftUI core concepts.
 
 | #   | Project                                           | Description                                                                     |
 | --- | ------------------------------------------------- | ------------------------------------------------------------------------------- |
@@ -26,6 +26,7 @@
 | 20  | [**Cupcake Corner**](20-cupcake-corner)           | A multi-screen app for ordering cupcakes.                                       |
 | 21  | [**Bookworm**](21-bookworm)                       | A reading tracker app, using Core Data.                                         |
 | 22  | [**Core Data**](22-core-data)                     | A technique project focusing on Core Data.                                      |
+| 23  | [**Profiles**](23-profiles)                       | A list of users to download some JSON.                                          |
 
 These projects are adapted from various sources:
 
