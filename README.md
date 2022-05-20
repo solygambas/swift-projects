@@ -1,6 +1,6 @@
 # Swift Projects
 
-23 projects to understand Swift and SwiftUI core concepts.
+24 projects to understand Swift and SwiftUI core concepts.
 
 | #   | Project                                           | Description                                                                     |
 | --- | ------------------------------------------------- | ------------------------------------------------------------------------------- |
@@ -27,6 +27,7 @@
 | 21  | [**Bookworm**](21-bookworm)                       | A reading tracker app, using Core Data.                                         |
 | 22  | [**Core Data**](22-core-data)                     | A technique project focusing on Core Data.                                      |
 | 23  | [**Profiles**](23-profiles)                       | A list of users to download some JSON and store it using Core Data.             |
+| 24  | [**Instafilter**](24-instafilter)                 | A photo filter app using Core Image and integrating with UIKit.                 |
 
 These projects are adapted from various sources:
 
