@@ -2,9 +2,9 @@
 
 A photo filter app using Core Image and integrating with UIKit.
 
-<!-- <p align="center">
+<p align="center">
     <img src="screenshot.png" style="width:528px;max-width:100%;">
-</p> -->
+</p>
 
 ## Features
 
