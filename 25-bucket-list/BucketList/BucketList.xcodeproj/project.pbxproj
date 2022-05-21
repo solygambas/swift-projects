@@ -12,6 +12,7 @@
 		EECD045C2838E8CF0025A614 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EECD045B2838E8CF0025A614 /* Assets.xcassets */; };
 		EECD045F2838E8CF0025A614 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EECD045E2838E8CF0025A614 /* Preview Assets.xcassets */; };
 		EECD04662838F77B0025A614 /* SimpleMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD04652838F77B0025A614 /* SimpleMap.swift */; };
+		EECD04682838FD640025A614 /* SimpleFaceID.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD04672838FD640025A614 /* SimpleFaceID.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		EECD045B2838E8CF0025A614 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EECD045E2838E8CF0025A614 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EECD04652838F77B0025A614 /* SimpleMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMap.swift; sourceTree = "<group>"; };
+		EECD04672838FD640025A614 /* SimpleFaceID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleFaceID.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				EECD04652838F77B0025A614 /* SimpleMap.swift */,
 				EECD045B2838E8CF0025A614 /* Assets.xcassets */,
 				EECD045D2838E8CF0025A614 /* Preview Content */,
+				EECD04672838FD640025A614 /* SimpleFaceID.swift */,
 			);
 			path = BucketList;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 				EECD04662838F77B0025A614 /* SimpleMap.swift in Sources */,
 				EECD045A2838E8C40025A614 /* ContentView.swift in Sources */,
 				EECD04582838E8C40025A614 /* BucketListApp.swift in Sources */,
+				EECD04682838FD640025A614 /* SimpleFaceID.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +277,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BucketList/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +306,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BucketList/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -79,7 +79,10 @@ struct ContentView: View {
 //        }
         
         // simple map
-        SimpleMap()
+        //SimpleMap()
+        
+        // simple FaceID
+        SimpleFaceID()
     }
     
     func getDocumentsDirectory() -> URL {
