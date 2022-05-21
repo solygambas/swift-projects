@@ -47,7 +47,7 @@ struct ContentView: View {
 //        User(firstName: "Kristine", lastName: "Kochanski"),
 //        User(firstName: "David", lastName: "Lister")
 //    ].sorted()
-    var loadingState = LoadingState.loading
+    //var loadingState = LoadingState.loading
     
     var body: some View {
 //        List(users) { user in
@@ -70,13 +70,16 @@ struct ContentView: View {
 //            }
         
         // switching view states with enums
-        if loadingState == .loading {
-            LoadingView()
-        } else if loadingState == .success {
-            SuccessView()
-        } else if loadingState == .failed {
-            FailedView()
-        }
+//        if loadingState == .loading {
+//            LoadingView()
+//        } else if loadingState == .success {
+//            SuccessView()
+//        } else if loadingState == .failed {
+//            FailedView()
+//        }
+        
+        // simple map
+        SimpleMap()
     }
     
     func getDocumentsDirectory() -> URL {
