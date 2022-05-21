@@ -11,7 +11,7 @@
 import SwiftUI
 import MapKit
 
-struct Location: Identifiable {
+struct Place: Identifiable {
     let id = UUID()
     let name: String
     let coordinate: CLLocationCoordinate2D
@@ -20,8 +20,8 @@ struct Location: Identifiable {
 struct SimpleMap: View {
     @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 28.64, longitude: 77.21), span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
     let locations = [
-        Location(name: "Lodi Garden", coordinate: CLLocationCoordinate2D(latitude: 28.59, longitude: 77.21)),
-        Location(name: "India Gate", coordinate: CLLocationCoordinate2D(latitude: 28.61, longitude: 77.23))
+        Place(name: "Lodi Garden", coordinate: CLLocationCoordinate2D(latitude: 28.59, longitude: 77.21)),
+        Place(name: "India Gate", coordinate: CLLocationCoordinate2D(latitude: 28.61, longitude: 77.23))
     ]
     
     var body: some View {
