@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE046089283A04FE008A137B /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE046088283A04FE008A137B /* EditView.swift */; };
 		EECD04582838E8C40025A614 /* BucketListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD04572838E8C40025A614 /* BucketListApp.swift */; };
 		EECD045A2838E8C40025A614 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECD04592838E8C40025A614 /* TestView.swift */; };
 		EECD045C2838E8CF0025A614 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EECD045B2838E8CF0025A614 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE046088283A04FE008A137B /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		EECD04542838E8C40025A614 /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECD04572838E8C40025A614 /* BucketListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListApp.swift; sourceTree = "<group>"; };
 		EECD04592838E8C40025A614 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				EECD04572838E8C40025A614 /* BucketListApp.swift */,
 				EECD04592838E8C40025A614 /* TestView.swift */,
 				EECD04692839028B0025A614 /* ContentView.swift */,
+				EE046088283A04FE008A137B /* EditView.swift */,
 				EECD046B283904A90025A614 /* Location.swift */,
 				EECD04652838F77B0025A614 /* SimpleMap.swift */,
 				EECD045B2838E8CF0025A614 /* Assets.xcassets */,
@@ -153,6 +156,7 @@
 				EECD046A2839028B0025A614 /* ContentView.swift in Sources */,
 				EECD045A2838E8C40025A614 /* TestView.swift in Sources */,
 				EECD04582838E8C40025A614 /* BucketListApp.swift in Sources */,
+				EE046089283A04FE008A137B /* EditView.swift in Sources */,
 				EECD046C283904A90025A614 /* Location.swift in Sources */,
 				EECD04682838FD640025A614 /* SimpleFaceID.swift in Sources */,
 			);
