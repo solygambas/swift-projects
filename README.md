@@ -1,6 +1,6 @@
 # Swift Projects
 
-25 projects to understand Swift and SwiftUI core concepts.
+26 projects to understand Swift and SwiftUI core concepts.
 
 | #   | Project                                           | Description                                                                     |
 | --- | ------------------------------------------------- | ------------------------------------------------------------------------------- |
@@ -29,6 +29,7 @@
 | 23  | [**Profiles**](23-profiles)                       | A list of users to download some JSON and store it using Core Data.             |
 | 24  | [**Instafilter**](24-instafilter)                 | A photo filter app using Core Image and integrating with UIKit.                 |
 | 25  | [**Bucket List**](25-bucket-list)                 | An app to track dream destinations, using MapKit, Touch ID and Face ID.         |
+| 26  | [**Accessibility**](26-accessibility)             | A technique project to learn accessibility best practices, using VoiceOver.     |
 
 These projects are adapted from various sources:
 
