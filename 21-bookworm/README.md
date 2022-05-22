@@ -18,5 +18,6 @@ A reading tracker app, using Core Data.
 - sorting fetch requests with SortDescriptor.
 - deleting from a Core Data fetch request.
 - using an alert to pop a NavigationLink programmatically.
+- adding VoiceOver support.
 
 Based on [100 Days of SwiftUI](https://www.hackingwithswift.com/100/swiftui) by Paul Hudson - Hacking with Swift (2022).

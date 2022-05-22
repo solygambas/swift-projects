@@ -14,5 +14,6 @@ A game to generate new words out of a random eight-letter word.
 - adding to a list of words.
 - running code when the app launches.
 - validating words with UITextChecker.
+- adding VoiceOver support.
 
 Based on [100 Days of SwiftUI](https://www.hackingwithswift.com/100/swiftui) by Paul Hudson - Hacking with Swift (2022).

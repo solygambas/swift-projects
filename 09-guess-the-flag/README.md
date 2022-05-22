@@ -14,5 +14,6 @@ A guessing game on country flags.
 - showing the player's score with an alert.
 - stacking up buttons.
 - styling and animating the flags.
+- adding VoiceOver support.
 
 Based on [100 Days of SwiftUI](https://www.hackingwithswift.com/100/swiftui) by Paul Hudson - Hacking with Swift (2022).
