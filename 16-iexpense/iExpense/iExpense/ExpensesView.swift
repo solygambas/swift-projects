@@ -25,5 +25,8 @@ struct ExpensesView: View {
                 .foregroundColor(item.amount <= 10 ?.littleExpenseColor:
                     item.amount <= 100 ? .normalExpenseColor : .hugeExpenseColor)
         }
+        .accessibilityElement()
+        .accessibilityLabel("\(item.name) \(item.amount)")
+        .accessibilityHint(item.type)
     }
 }

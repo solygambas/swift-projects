@@ -29,7 +29,10 @@ struct ContentView: View {
                 Button(action: toggleGrid) {
                     Image(systemName: showingGrid ? "rectangle.grid.1x2" : "rectangle.grid.2x2")
                         .foregroundColor(.white)
+                        
                 }
+                .accessibilityElement()
+                .accessibilityLabel(showingGrid ? "Show List" : "Show Grid")
                                         }
             .background(.darkBackground)
             .preferredColorScheme(.dark)

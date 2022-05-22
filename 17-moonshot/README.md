@@ -18,5 +18,6 @@ An app about the missions and astronauts part of Apollo space program.
 - showing the mission details.
 - showing the astronaut details.
 - toggling between showing missions as a grid and as a list.
+- providing accessibility labels.
 
 Based on [100 Days of SwiftUI](https://www.hackingwithswift.com/100/swiftui) by Paul Hudson - Hacking with Swift (2022).

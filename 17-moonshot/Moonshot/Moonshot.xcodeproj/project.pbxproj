@@ -61,8 +61,6 @@
 		EE7BE574282A26B6001DECCF = {
 			isa = PBXGroup;
 			children = (
-				EE33A635282B8E0700BD4CB2 /* ListLayout.swift */,
-				EE33A631282B88EF00BD4CB2 /* DividerView.swift */,
 				EE7BE57F282A26B6001DECCF /* Moonshot */,
 				EE7BE57E282A26B6001DECCF /* Products */,
 			);
@@ -79,6 +77,8 @@
 		EE7BE57F282A26B6001DECCF /* Moonshot */ = {
 			isa = PBXGroup;
 			children = (
+				EE33A631282B88EF00BD4CB2 /* DividerView.swift */,
+				EE33A635282B8E0700BD4CB2 /* ListLayout.swift */,
 				EE7BE595282A39F4001DECCF /* astronauts.json */,
 				EE7BE598282A3A43001DECCF /* Astronaut.swift */,
 				EE7BE59A282A3AAC001DECCF /* Bundle-Decodable.swift */,

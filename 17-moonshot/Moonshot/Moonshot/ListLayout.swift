@@ -38,6 +38,8 @@ struct ListLayout: View {
                             .frame(maxWidth: .infinity)
                             .background(.lightBackground)
                         }
+                        .accessibilityElement()
+                        .accessibilityLabel("\(mission.displayName) launched on \(mission.formattedLaunchDate)")
                         
                     }.listRowBackground(Color.darkBackground)
             }
