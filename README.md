@@ -1,6 +1,6 @@
 # Swift Projects
 
-26 projects to understand Swift and SwiftUI core concepts.
+27 projects to understand Swift and SwiftUI core concepts.
 
 | #   | Project                                           | Description                                                                     |
 | --- | ------------------------------------------------- | ------------------------------------------------------------------------------- |
@@ -30,6 +30,7 @@
 | 24  | [**Instafilter**](24-instafilter)                 | A photo filter app using Core Image and integrating with UIKit.                 |
 | 25  | [**Bucket List**](25-bucket-list)                 | An app to track dream destinations, using MapKit, Touch ID and Face ID.         |
 | 26  | [**Accessibility**](26-accessibility)             | A technique project to learn accessibility best practices, using VoiceOver.     |
+| 27  | [**Nameger**](27-nameger)                         | A contact management app to remember people's names.                            |
 
 These projects are adapted from various sources:
 
