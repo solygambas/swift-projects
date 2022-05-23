@@ -39,6 +39,7 @@ struct ImagePicker: UIViewControllerRepresentable {
         config.filter = .images
         let picker = PHPickerViewController(configuration: config)
         picker.delegate = context.coordinator
+        //picker.sourceType = .camera
         return picker
     }
     

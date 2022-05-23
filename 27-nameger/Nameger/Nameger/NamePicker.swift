@@ -12,23 +12,17 @@ import SwiftUI
 
 struct NamePicker: View {
     @Environment(\.dismiss) var dismiss
-    var image: Image?
-    @State var name = ""
+    @Binding var name: String
     
     var body: some View {
         NavigationView {
             VStack {
-                // save name & photo
                 TextField("Name", text: $name)
                     .padding()
-                image?
-                    .resizable()
-                    .scaledToFit()
             }
             .navigationTitle("Name your contact")
                         .toolbar {
                             Button("Save") {
-                                //
                                 dismiss()
                             }
                         }

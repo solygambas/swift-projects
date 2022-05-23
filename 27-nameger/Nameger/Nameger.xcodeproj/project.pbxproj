@@ -13,6 +13,9 @@
 		EE0460DA283A7B4A008A137B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE0460D9283A7B4A008A137B /* Preview Assets.xcassets */; };
 		EE9BC122283B4BE800618E6B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9BC121283B4BE800618E6B /* ImagePicker.swift */; };
 		EE9BC124283B557200618E6B /* NamePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9BC123283B557200618E6B /* NamePicker.swift */; };
+		EE9BC126283B611300618E6B /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9BC125283B611300618E6B /* ImageSaver.swift */; };
+		EE9BC128283B8CB100618E6B /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9BC127283B8CB100618E6B /* Photo.swift */; };
+		EE9BC12A283BD18A00618E6B /* PhotoCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9BC129283BD18A00618E6B /* PhotoCollection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		EE0460D9283A7B4A008A137B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE9BC121283B4BE800618E6B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		EE9BC123283B557200618E6B /* NamePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamePicker.swift; sourceTree = "<group>"; };
+		EE9BC125283B611300618E6B /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
+		EE9BC127283B8CB100618E6B /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		EE9BC129283BD18A00618E6B /* PhotoCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +64,12 @@
 				EE0460D2283A7B48008A137B /* NamegerApp.swift */,
 				EE9BC121283B4BE800618E6B /* ImagePicker.swift */,
 				EE0460D4283A7B48008A137B /* ContentView.swift */,
+				EE9BC129283BD18A00618E6B /* PhotoCollection.swift */,
+				EE9BC127283B8CB100618E6B /* Photo.swift */,
 				EE9BC123283B557200618E6B /* NamePicker.swift */,
 				EE0460D6283A7B4A008A137B /* Assets.xcassets */,
 				EE0460D8283A7B4A008A137B /* Preview Content */,
+				EE9BC125283B611300618E6B /* ImageSaver.swift */,
 			);
 			path = Nameger;
 			sourceTree = "<group>";
@@ -143,7 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE9BC128283B8CB100618E6B /* Photo.swift in Sources */,
 				EE9BC122283B4BE800618E6B /* ImagePicker.swift in Sources */,
+				EE9BC12A283BD18A00618E6B /* PhotoCollection.swift in Sources */,
+				EE9BC126283B611300618E6B /* ImageSaver.swift in Sources */,
 				EE0460D5283A7B48008A137B /* ContentView.swift in Sources */,
 				EE9BC124283B557200618E6B /* NamePicker.swift in Sources */,
 				EE0460D3283A7B48008A137B /* NamegerApp.swift in Sources */,
