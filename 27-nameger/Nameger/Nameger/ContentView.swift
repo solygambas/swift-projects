@@ -15,6 +15,7 @@ struct ContentView: View {
     @State private var showingImagePicker = false
     @State private var showingNamePicker = false
     @State private var contactName = ""
+    let locationFetcher = LocationFetcher()
     
     let columns = [
         GridItem(.flexible()),
@@ -69,14 +70,18 @@ struct ContentView: View {
     func loadImage() {
         guard let inputImage = inputImage else { return }
         image = Image(uiImage: inputImage)
+        locationFetcher.start()
         showingNamePicker = true
     }
     
     func saveContact() {
         guard let inputImage = inputImage else { return }
-        let newPhoto = Photo(name: contactName)
+        var newPhoto = Photo(name: contactName)
         let imageSaver = ImageSaver()
         let url = imageSaver.writeToSecureDirectory(uiImage: inputImage, id: newPhoto.id)
+        if let location = self.locationFetcher.lastKnownLocation {
+                    newPhoto.setLocation(location: location)
+                }
         if url != nil {
             photos.append(newPhoto)
             contactName = ""

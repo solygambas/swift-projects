@@ -13,5 +13,6 @@ A contact management app to remember people's names.
 - saving the name and photo safely.
 - showing all names and photos in a list, sorted by first name.
 - creating a detail screen with a full-size picture.
+- showing a map
 
 Based on [100 Days of SwiftUI](https://www.hackingwithswift.com/100/swiftui) by Paul Hudson - Hacking with Swift (2022).

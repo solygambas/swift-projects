@@ -10,10 +10,13 @@
 
 import Foundation
 import SwiftUI
+import MapKit
 
 struct Photo: Codable, Identifiable, Comparable {
     var id = UUID()
     var name: String
+    var longitude: CLLocationDegrees?
+    var latitude: CLLocationDegrees?
     
     var image: Image? {
             let imageSaver = ImageSaver()
@@ -25,6 +28,18 @@ struct Photo: Codable, Identifiable, Comparable {
             }
             
             return Image(uiImage: uiImage)
+        }
+    
+    var location: CLLocationCoordinate2D? {
+            guard let latitude = self.latitude, let longitude = self.longitude else {
+                return nil
+            }
+            return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        }
+    
+    mutating func setLocation(location: CLLocationCoordinate2D) {
+            self.longitude = location.longitude
+            self.latitude = location.latitude
         }
     
     static func <(lhs: Photo, rhs: Photo) -> Bool {

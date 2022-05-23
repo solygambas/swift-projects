@@ -17,6 +17,7 @@
 		EE9BC128283B8CB100618E6B /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9BC127283B8CB100618E6B /* Photo.swift */; };
 		EE9BC12A283BD18A00618E6B /* PhotoCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9BC129283BD18A00618E6B /* PhotoCollection.swift */; };
 		EE9BC12C283BD7BC00618E6B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9BC12B283BD7BC00618E6B /* DetailView.swift */; };
+		EE9BC12E283BEB1B00618E6B /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9BC12D283BEB1B00618E6B /* LocationFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		EE9BC127283B8CB100618E6B /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		EE9BC129283BD18A00618E6B /* PhotoCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollection.swift; sourceTree = "<group>"; };
 		EE9BC12B283BD7BC00618E6B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		EE9BC12D283BEB1B00618E6B /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				EE0460D2283A7B48008A137B /* NamegerApp.swift */,
+				EE9BC12D283BEB1B00618E6B /* LocationFetcher.swift */,
 				EE9BC121283B4BE800618E6B /* ImagePicker.swift */,
 				EE0460D4283A7B48008A137B /* ContentView.swift */,
 				EE9BC12B283BD7BC00618E6B /* DetailView.swift */,
@@ -163,6 +166,7 @@
 				EE0460D5283A7B48008A137B /* ContentView.swift in Sources */,
 				EE9BC124283B557200618E6B /* NamePicker.swift in Sources */,
 				EE0460D3283A7B48008A137B /* NamegerApp.swift in Sources */,
+				EE9BC12E283BEB1B00618E6B /* LocationFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +297,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Nameger/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -321,6 +326,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Nameger/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
