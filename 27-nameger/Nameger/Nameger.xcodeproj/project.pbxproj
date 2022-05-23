@@ -11,6 +11,8 @@
 		EE0460D5283A7B48008A137B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0460D4283A7B48008A137B /* ContentView.swift */; };
 		EE0460D7283A7B4A008A137B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE0460D6283A7B4A008A137B /* Assets.xcassets */; };
 		EE0460DA283A7B4A008A137B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE0460D9283A7B4A008A137B /* Preview Assets.xcassets */; };
+		EE9BC122283B4BE800618E6B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9BC121283B4BE800618E6B /* ImagePicker.swift */; };
+		EE9BC124283B557200618E6B /* NamePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9BC123283B557200618E6B /* NamePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		EE0460D4283A7B48008A137B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EE0460D6283A7B4A008A137B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE0460D9283A7B4A008A137B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE9BC121283B4BE800618E6B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		EE9BC123283B557200618E6B /* NamePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				EE0460D2283A7B48008A137B /* NamegerApp.swift */,
+				EE9BC121283B4BE800618E6B /* ImagePicker.swift */,
 				EE0460D4283A7B48008A137B /* ContentView.swift */,
+				EE9BC123283B557200618E6B /* NamePicker.swift */,
 				EE0460D6283A7B4A008A137B /* Assets.xcassets */,
 				EE0460D8283A7B4A008A137B /* Preview Content */,
 			);
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE9BC122283B4BE800618E6B /* ImagePicker.swift in Sources */,
 				EE0460D5283A7B48008A137B /* ContentView.swift in Sources */,
+				EE9BC124283B557200618E6B /* NamePicker.swift in Sources */,
 				EE0460D3283A7B48008A137B /* NamegerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
