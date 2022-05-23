@@ -16,6 +16,7 @@
 		EE9BC126283B611300618E6B /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9BC125283B611300618E6B /* ImageSaver.swift */; };
 		EE9BC128283B8CB100618E6B /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9BC127283B8CB100618E6B /* Photo.swift */; };
 		EE9BC12A283BD18A00618E6B /* PhotoCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9BC129283BD18A00618E6B /* PhotoCollection.swift */; };
+		EE9BC12C283BD7BC00618E6B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9BC12B283BD7BC00618E6B /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		EE9BC125283B611300618E6B /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
 		EE9BC127283B8CB100618E6B /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		EE9BC129283BD18A00618E6B /* PhotoCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollection.swift; sourceTree = "<group>"; };
+		EE9BC12B283BD7BC00618E6B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				EE0460D2283A7B48008A137B /* NamegerApp.swift */,
 				EE9BC121283B4BE800618E6B /* ImagePicker.swift */,
 				EE0460D4283A7B48008A137B /* ContentView.swift */,
+				EE9BC12B283BD7BC00618E6B /* DetailView.swift */,
 				EE9BC129283BD18A00618E6B /* PhotoCollection.swift */,
 				EE9BC127283B8CB100618E6B /* Photo.swift */,
 				EE9BC123283B557200618E6B /* NamePicker.swift */,
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE9BC128283B8CB100618E6B /* Photo.swift in Sources */,
+				EE9BC12C283BD7BC00618E6B /* DetailView.swift in Sources */,
 				EE9BC122283B4BE800618E6B /* ImagePicker.swift in Sources */,
 				EE9BC12A283BD18A00618E6B /* PhotoCollection.swift in Sources */,
 				EE9BC126283B611300618E6B /* ImageSaver.swift in Sources */,

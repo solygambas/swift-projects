@@ -16,16 +16,14 @@ struct NamePicker: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                TextField("Name", text: $name)
-                    .padding()
+            Form {
+                Section(header: Text("Name the new photo")) {
+                    TextField("Name", text: $name)
+                }
             }
-            .navigationTitle("Name your contact")
-                        .toolbar {
-                            Button("Save") {
+            .navigationBarItems(trailing: Button("Done") {
                                 dismiss()
-                            }
-                        }
+                            })
         }
     }
 }

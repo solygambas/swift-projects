@@ -16,23 +16,42 @@ struct ContentView: View {
     @State private var showingNamePicker = false
     @State private var contactName = ""
     
+    let columns = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
+    
     var body: some View {
         NavigationView {
             ScrollView {
-                // show all names and photos
-                // detail screen with full size picture
-                ForEach(photos.items.sorted()) { photo in
-                    NavigationLink(destination: Text(photo.name),
-                                   label: {
-                        photo.image?
-                            .resizable()
-                            .scaledToFit()
-                    })
+                LazyVGrid(columns: columns, alignment: .center, spacing: 20) {
+                    ForEach(photos.items.sorted()) { photo in
+                        NavigationLink(
+                            destination: DetailView(photo: photo),
+                            label: {
+                                ZStack(alignment: .bottomLeading) {
+                                    photo.image?
+                                        .resizable()
+                                        .frame(minWidth: 0,  maxWidth: .infinity, minHeight: 50,  maxHeight: 150)
+                                        .cornerRadius(10)
+                                    Text(photo.name)
+                                        .font(.caption)
+                                        .fontWeight(.black)
+                                        .padding(8)
+                                        .foregroundColor(.white)
+                                        .shadow(radius: 15)
+                                        .offset(x: -5, y: -5)
+                                    
+                                }
+                            })
+                    }
                 }
+                .padding(.horizontal)
             }
             .navigationTitle("Nameger")
             .toolbar {
-                Button("New Contact") {
+                Button("Add") {
                     showingImagePicker = true
                 }
                 .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
