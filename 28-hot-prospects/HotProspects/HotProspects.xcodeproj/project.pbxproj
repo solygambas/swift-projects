@@ -21,6 +21,7 @@
 		EE27FA1F283CE0AE00D74B6B /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE27FA1E283CE0AE00D74B6B /* MeView.swift */; };
 		EE27FA21283CE70300D74B6B /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE27FA20283CE70300D74B6B /* Prospect.swift */; };
 		EE27FA24283CF6B000D74B6B /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = EE27FA23283CF6B000D74B6B /* CodeScanner */; };
+		EE27FA26283D02D000D74B6B /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE27FA25283D02D000D74B6B /* ImageSaver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		EE27FA1C283CE09F00D74B6B /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
 		EE27FA1E283CE0AE00D74B6B /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
 		EE27FA20283CE70300D74B6B /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
+		EE27FA25283D02D000D74B6B /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				EE27FA20283CE70300D74B6B /* Prospect.swift */,
 				EE27FA1C283CE09F00D74B6B /* ProspectsView.swift */,
 				EE27FA1E283CE0AE00D74B6B /* MeView.swift */,
+				EE27FA25283D02D000D74B6B /* ImageSaver.swift */,
 			);
 			path = HotProspects;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				EE27FA15283CA77600D74B6B /* TestView.swift in Sources */,
 				EE27FA1D283CE09F00D74B6B /* ProspectsView.swift in Sources */,
 				EE27FA01283C976F00D74B6B /* HotProspectsApp.swift in Sources */,
+				EE27FA26283D02D000D74B6B /* ImageSaver.swift in Sources */,
 				EE27FA1F283CE0AE00D74B6B /* MeView.swift in Sources */,
 				EE27FA11283C9E7900D74B6B /* ManuealPublish.swift in Sources */,
 				EE27FA0F283C9B3100D74B6B /* TabExample.swift in Sources */,
@@ -322,6 +326,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan QR codes.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save our QR code.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -351,6 +356,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan QR codes.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save our QR code.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -2,9 +2,9 @@
 
 An app to track potential customers, using QR codes.
 
-<!-- <p align="center">
+<p align="center">
     <img src="screenshot.png" style="width:528px;max-width:100%;">
-</p> -->
+</p>
 
 ## Features
 
