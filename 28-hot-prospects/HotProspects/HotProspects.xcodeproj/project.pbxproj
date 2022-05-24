@@ -17,6 +17,9 @@
 		EE27FA15283CA77600D74B6B /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE27FA14283CA77600D74B6B /* TestView.swift */; };
 		EE27FA18283CB03A00D74B6B /* SamplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = EE27FA17283CB03A00D74B6B /* SamplePackage */; };
 		EE27FA1A283CB1CE00D74B6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE27FA19283CB1CE00D74B6B /* ContentView.swift */; };
+		EE27FA1D283CE09F00D74B6B /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE27FA1C283CE09F00D74B6B /* ProspectsView.swift */; };
+		EE27FA1F283CE0AE00D74B6B /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE27FA1E283CE0AE00D74B6B /* MeView.swift */; };
+		EE27FA21283CE70300D74B6B /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE27FA20283CE70300D74B6B /* Prospect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		EE27FA12283CA3B800D74B6B /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		EE27FA14283CA77600D74B6B /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		EE27FA19283CB1CE00D74B6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EE27FA1C283CE09F00D74B6B /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
+		EE27FA1E283CE0AE00D74B6B /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
+		EE27FA20283CE70300D74B6B /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,15 +69,14 @@
 		EE27F9FF283C976F00D74B6B /* HotProspects */ = {
 			isa = PBXGroup;
 			children = (
+				EE27FA1B283CE01100D74B6B /* Techniques */,
 				EE27FA00283C976F00D74B6B /* HotProspectsApp.swift */,
-				EE27FA02283C976F00D74B6B /* EnvValuesView.swift */,
-				EE27FA10283C9E7900D74B6B /* ManuealPublish.swift */,
-				EE27FA0E283C9B3100D74B6B /* TabExample.swift */,
 				EE27FA04283C977300D74B6B /* Assets.xcassets */,
 				EE27FA06283C977300D74B6B /* Preview Content */,
-				EE27FA12283CA3B800D74B6B /* ResultView.swift */,
-				EE27FA14283CA77600D74B6B /* TestView.swift */,
 				EE27FA19283CB1CE00D74B6B /* ContentView.swift */,
+				EE27FA20283CE70300D74B6B /* Prospect.swift */,
+				EE27FA1C283CE09F00D74B6B /* ProspectsView.swift */,
+				EE27FA1E283CE0AE00D74B6B /* MeView.swift */,
 			);
 			path = HotProspects;
 			sourceTree = "<group>";
@@ -82,6 +87,18 @@
 				EE27FA07283C977300D74B6B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE27FA1B283CE01100D74B6B /* Techniques */ = {
+			isa = PBXGroup;
+			children = (
+				EE27FA0E283C9B3100D74B6B /* TabExample.swift */,
+				EE27FA12283CA3B800D74B6B /* ResultView.swift */,
+				EE27FA14283CA77600D74B6B /* TestView.swift */,
+				EE27FA10283C9E7900D74B6B /* ManuealPublish.swift */,
+				EE27FA02283C976F00D74B6B /* EnvValuesView.swift */,
+			);
+			path = Techniques;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,10 +178,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE27FA03283C976F00D74B6B /* EnvValuesView.swift in Sources */,
+				EE27FA21283CE70300D74B6B /* Prospect.swift in Sources */,
 				EE27FA13283CA3B800D74B6B /* ResultView.swift in Sources */,
 				EE27FA1A283CB1CE00D74B6B /* ContentView.swift in Sources */,
 				EE27FA15283CA77600D74B6B /* TestView.swift in Sources */,
+				EE27FA1D283CE09F00D74B6B /* ProspectsView.swift in Sources */,
 				EE27FA01283C976F00D74B6B /* HotProspectsApp.swift in Sources */,
+				EE27FA1F283CE0AE00D74B6B /* MeView.swift in Sources */,
 				EE27FA11283C9E7900D74B6B /* ManuealPublish.swift in Sources */,
 				EE27FA0F283C9B3100D74B6B /* TabExample.swift in Sources */,
 			);
