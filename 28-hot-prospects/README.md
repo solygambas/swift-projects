@@ -1,6 +1,6 @@
 # Hot Prospects
 
-An app to track potential customers.
+An app to track potential customers, using QR codes.
 
 <!-- <p align="center">
     <img src="screenshot.png" style="width:528px;max-width:100%;">
