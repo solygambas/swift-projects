@@ -1,6 +1,6 @@
 # Swift Projects
 
-28 projects to understand Swift and SwiftUI core concepts.
+29 projects to understand Swift and SwiftUI core concepts.
 
 | #   | Project                                           | Description                                                                     |
 | --- | ------------------------------------------------- | ------------------------------------------------------------------------------- |
@@ -32,6 +32,7 @@
 | 26  | [**Accessibility**](26-accessibility)             | A technique project to learn accessibility best practices, using VoiceOver.     |
 | 27  | [**Nameger**](27-nameger)                         | A contact management app to remember people's names.                            |
 | 28  | [**Hot Prospects**](28-hot-prospects)             | An app to track potential customers, using QR codes.                            |
+| 29  | [**Flashzilla**](29-flashzilla)                   | A flashcard app, relying on gestures and Core Haptics.                          |
 
 These projects are adapted from various sources:
 
