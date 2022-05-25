@@ -15,10 +15,27 @@ import UserNotifications
 struct ProspectsView: View {
     @EnvironmentObject var prospects: Prospects
     @State private var isShowingScanner = false
+    @State private var isShowingSettings = false
     
     enum FilterType {
         case none, contacted, uncontacted
     }
+    enum SortType {
+        case none, name, date
+    }
+    
+    @State private var sort = SortType.none
+    var sortedProspects: [Prospect] {
+        switch sort {
+        case .none:
+            return filteredProspects
+        case .name:
+            return filteredProspects.sorted()
+        case .date:
+            return filteredProspects.sorted(by: { $0.date > $1.date})
+                }
+    }
+    
     let filter: FilterType
     var title: String {
         switch filter {
@@ -44,12 +61,16 @@ struct ProspectsView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(filteredProspects) { prospect in
-                    VStack(alignment: .leading) {
-                        Text(prospect.name)
-                            .font(.headline)
-                        Text(prospect.emailAddress)
-                            .foregroundColor(.secondary)
+                ForEach(sortedProspects) { prospect in
+                        VStack(alignment: .leading) {
+                            HStack {
+                                Image(systemName: prospect.isContacted ? "person.crop.circle.fill.badge.checkmark" : "person.crop.circle.badge.xmark")
+                                    .foregroundColor(prospect.isContacted ? .green : .red)
+                                Text(prospect.name)
+                                    .font(.headline)
+                            }
+                            Text(prospect.emailAddress)
+                                .foregroundColor(.secondary)
                     }
                     .swipeActions {
                         if prospect.isContacted {
@@ -78,18 +99,35 @@ struct ProspectsView: View {
             }
                 .navigationTitle(title)
                 .toolbar {
-                    Button {
-//                        let prospect = Prospect()
-//                        prospect.name = "James Gandolfini"
-//                        prospect.emailAddress = "james@gandolfini.com"
-//                        prospects.people.append(prospect)
-                        isShowingScanner = true
-                    } label: {
-                        Label("Scan", systemImage: "qrcode.viewfinder")
-                    }
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Button {
+                            isShowingSettings = true
+                        } label: {
+                            Label("Sort", systemImage: "arrow.up.arrow.down")
+                        }
+                                        }
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button {
+    //                        let prospect = Prospect()
+    //                        prospect.name = "James Gandolfini"
+    //                        prospect.emailAddress = "james@gandolfini.com"
+    //                        prospects.people.append(prospect)
+                            isShowingScanner = true
+                        } label: {
+                            Label("Scan", systemImage: "qrcode.viewfinder")
+                        }
+                                        }
+                    
+                    
                 }
+                .confirmationDialog("Sort", isPresented: $isShowingSettings) {
+                                Button("None") { sort = .none }
+                                Button("Sort by name") { sort = .name }
+                                Button("Sort by most recent") { sort = .date }
+                                Button("Cancel", role: .cancel) { }
+                            }
                 .sheet(isPresented: $isShowingScanner) {
-                    CodeScannerView(codeTypes: [.qr], simulatedData: "James Gandolfini\njames@gandolfini.com", completion: handleScan)
+                    CodeScannerView(codeTypes: [.qr], simulatedData: "Lorraine Bracco\nlorraine@bracco.com", completion: handleScan)
                 }
         }
     }

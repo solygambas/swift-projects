@@ -26,5 +26,8 @@ An app to track potential customers, using QR codes.
 - saving and loading data with UserDefaults.
 - adding a context menu to an image.
 - posting notifications to the lock screen.
+- showing whether a prospect was contacted or not.
+- saving and loading data from the documents directory.
+- sorting contacts by name or by most recent.
 
 Based on [100 Days of SwiftUI](https://www.hackingwithswift.com/100/swiftui) by Paul Hudson - Hacking with Swift (2022).

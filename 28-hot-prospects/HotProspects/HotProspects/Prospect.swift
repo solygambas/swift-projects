@@ -10,19 +10,30 @@
 
 import SwiftUI
 
-class Prospect: Identifiable, Codable {
+class Prospect: Identifiable, Codable, Comparable {
     var id = UUID()
     var name = "Anonymous"
     var emailAddress = ""
+    var date = Date.now
     fileprivate(set) var isContacted = false
+    
+    static func <(lhs: Prospect, rhs: Prospect) -> Bool {
+            lhs.name < rhs.name
+        }
+    
+    static func ==(lhs: Prospect, rhs: Prospect) -> Bool {
+            lhs.id == rhs.id
+        }
 }
 
 @MainActor class Prospects: ObservableObject {
     @Published private(set) var people: [Prospect]
     let saveKey = "SavedData"
+    let savePath = FileManager.documentsDirectory.appendingPathComponent("SavedData")
     
     init() {
-        if let data = UserDefaults.standard.data(forKey: saveKey) {
+        //if let data = UserDefaults.standard.data(forKey: saveKey) {
+        if let data = try? Data(contentsOf: savePath) {
             if let decoded = try? JSONDecoder().decode([Prospect].self, from: data) {
                 people = decoded
                 return
@@ -33,7 +44,8 @@ class Prospect: Identifiable, Codable {
     
     private func save() {
         if let encoded = try? JSONEncoder().encode(people) {
-            UserDefaults.standard.set(encoded, forKey: saveKey)
+            // UserDefaults.standard.set(encoded, forKey: saveKey)
+            try? encoded.write(to: savePath, options: [.atomic, .completeFileProtection])
         }
     }
     
@@ -46,5 +58,12 @@ class Prospect: Identifiable, Codable {
         objectWillChange.send()
         prospect.isContacted.toggle()
         save()
+    }
+}
+
+extension FileManager {
+    static var documentsDirectory: URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths[0]
     }
 }
