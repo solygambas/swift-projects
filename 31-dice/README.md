@@ -3,7 +3,7 @@
 A dice app.
 
 <!-- <p align="center">
-    <img src="screenshot.png" style="max-width:100%;">
+    <img src="screenshot.png" style="width:528px;max-width:100%;">
 </p> -->
 
 ## Features
