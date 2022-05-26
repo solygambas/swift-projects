@@ -1,6 +1,6 @@
 # Swift Projects
 
-29 projects to understand Swift and SwiftUI core concepts.
+32 projects to understand Swift and SwiftUI core concepts.
 
 | #   | Project                                           | Description                                                                     |
 | --- | ------------------------------------------------- | ------------------------------------------------------------------------------- |
@@ -33,6 +33,9 @@
 | 27  | [**Nameger**](27-nameger)                         | A contact management app to remember people's names.                            |
 | 28  | [**Hot Prospects**](28-hot-prospects)             | An app to track potential customers, using QR codes.                            |
 | 29  | [**Flashzilla**](29-flashzilla)                   | A flashcard app, relying on gestures and Core Haptics.                          |
+| 30  | [**Layout and Geometry**](30-layout-and-geometry) | A technique project to explore how SwiftUI handles layout.                      |
+| 31  | [**Dice**](31-dice)                               | A dice app.                                                                     |
+| 32  | [**SnowSeeker**](32-snowseeker)                   | A skier app to browse ski resorts around the world, optimized for iPad.         |
 
 These projects are adapted from various sources:
 
