@@ -14,7 +14,7 @@ struct CardView: View {
     @Environment(\.accessibilityDifferentiateWithoutColor) var differentiateWithoutColor
     @Environment(\.accessibilityVoiceOverEnabled) var voiceOverEnabled
     let card: Card
-    var removal: (() -> Void)? = nil
+    var removal: ((Bool) -> Void)? = nil
     @State private var isShowingAnswer = false
     @State private var offset = CGSize.zero
     @State private var feedback = UINotificationFeedbackGenerator()
@@ -31,7 +31,7 @@ struct CardView: View {
                 .background(
                     differentiateWithoutColor ? nil :
                     RoundedRectangle(cornerRadius: 25, style: .continuous)
-                        .fill(offset.width > 0 ? .green : .red)
+                        .fill(offset.width == 0 ? .white : offset.width > 0 ? .green : .red)
                 )
                 .shadow(radius: 10)
             VStack {
@@ -67,12 +67,15 @@ struct CardView: View {
                 }
                 .onEnded { _ in
                     if abs(offset.width) > 100 {
-                        if offset.width > 0 {
-                            feedback.notificationOccurred(.success)
-                        } else {
-                            feedback.notificationOccurred(.error)
-                        }
-                        removal?()
+                        var isCorrect: Bool
+                                if self.offset.width > 0 {
+                                    self.feedback.notificationOccurred(.success)
+                                    isCorrect = true
+                                } else {
+                                    self.feedback.notificationOccurred(.error)
+                                    isCorrect = false
+                                }
+                                self.removal?(isCorrect)
                     } else {
                         offset = .zero
                     }
