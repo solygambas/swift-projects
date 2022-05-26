@@ -2,9 +2,9 @@
 
 A technique project to explore how SwiftUI handles layout.
 
-<!-- <p align="center">
+<p align="center">
     <img src="screenshot.png" style="max-width:100%;">
-</p> -->
+</p>
 
 ## Features
 

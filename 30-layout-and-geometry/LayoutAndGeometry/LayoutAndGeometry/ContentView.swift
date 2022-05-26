@@ -8,7 +8,39 @@
 
 import SwiftUI
 
+//struct OuterView: View {
+//    var body: some View {
+//        VStack {
+//            Text("Top")
+//            InnerView()
+//                .background(.green)
+//            Text("Bottom")
+//        }
+//    }
+//}
+//
+//struct InnerView: View {
+//    var body: some View {
+//        HStack {
+//            Text("Left")
+//            GeometryReader { geo in
+//                Text("Center")
+//                    .background(.blue)
+//                    .onTapGesture {
+//                        print("Global center on screen: \(geo.frame(in: .global).midX) x \(geo.frame(in: .global).midY)")
+//                        print("Custom center relative to some other view: \(geo.frame(in: .named("Custom")).midX) x \(geo.frame(in: .named("Custom")).midY)")
+//                        print("Local center relative to parent: \(geo.frame(in: .local).midX) x \(geo.frame(in: .local).midY)")
+//                                            }
+//            }
+//                .background(.orange)
+//            Text("Right")
+//        }
+//    }
+//}
+
 struct ContentView: View {
+    let colors: [Color] = [.red, .green, .blue, .orange, .pink, .purple, .yellow]
+    
     var body: some View {
 //        Text("Hello, world!")
 //            .padding(20)
@@ -42,22 +74,77 @@ struct ContentView: View {
 //        .background(.blue)
         
         // custom alignment guide
-        HStack(alignment: .midAccountAndName) {
-            VStack {
-                Text("@freezer")
-                    .alignmentGuide(.midAccountAndName) { d in d[VerticalAlignment.center] }
-                Image("freezer")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 64, height: 64)
-            }
-            VStack {
-                Text("Full name:")
-                Text("Freezer Freezer")
-                    .alignmentGuide(.midAccountAndName) { d in d[VerticalAlignment.center] }
-                    .font(.largeTitle)
+//        HStack(alignment: .midAccountAndName) {
+//            VStack {
+//                Text("@freezer")
+//                    .alignmentGuide(.midAccountAndName) { d in d[VerticalAlignment.center] }
+//                Image("freezer")
+//                    .resizable()
+//                    .scaledToFit()
+//                    .frame(width: 64, height: 64)
+//            }
+//            VStack {
+//                Text("Full name:")
+//                Text("Freezer Freezer")
+//                    .alignmentGuide(.midAccountAndName) { d in d[VerticalAlignment.center] }
+//                    .font(.largeTitle)
+//            }
+//        }
+        
+        // absolute position
+//        Text("Hello, world!")
+//            //.position(x: 100, y: 100)
+//            .offset(x: 100, y: 100)
+//            .background(.red)
+        
+        // GeometryReader
+//        VStack {
+//            GeometryReader { geo in
+//                        Text("Hello, World!")
+//                            .frame(width: geo.size.width * 0.9)
+//                            .background(.red)
+//                    }
+//            .background(.green)
+//            Text("More text")
+//                .background(.blue)
+//        }
+//        OuterView()
+//            .background(.red)
+//            .coordinateSpace(name: "Custom")
+        
+        // scrollview effects
+        // spinning helix effect
+        GeometryReader { fullView in
+            ScrollView {
+                ForEach(0..<50) { index in
+                    GeometryReader { geo in
+                        Text("Row #\(index)")
+                            .font(.title)
+                            .frame(maxWidth: .infinity)
+                            .background(colors[index % 7])
+                            .rotation3DEffect(.degrees(geo.frame(in: .global).minY - fullView.size.height / 2) / 5, axis: (x: 0, y: 1, z: 0))
+                    }
+                    .frame(height: 40)
+                }
             }
         }
+        
+        // coverflow
+//        ScrollView(.horizontal, showsIndicators: false) {
+//            HStack(spacing: 0) {
+//                ForEach(1..<20) { num in
+//                    GeometryReader { geo in
+//                        Text("Number \(num)")
+//                            .font(.largeTitle)
+//                            .padding()
+//                            .background(.red)
+//                            .rotation3DEffect(.degrees(-geo.frame(in: .global).minX) / 8, axis: (x: 0, y: 1, z: 0))
+//                            .frame(width: 200, height: 200)
+//                    }
+//                    .frame(width: 200, height: 200)
+//                }
+//            }
+//        }
     }
 }
 
@@ -67,12 +154,12 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-extension VerticalAlignment {
-    enum MidAccountAndName: AlignmentID {
-        static func defaultValue(in d: ViewDimensions) -> CGFloat {
-            d[.top]
-        }
-    }
-    
-    static let midAccountAndName = VerticalAlignment(MidAccountAndName.self)
-}
+//extension VerticalAlignment {
+//    enum MidAccountAndName: AlignmentID {
+//        static func defaultValue(in d: ViewDimensions) -> CGFloat {
+//            d[.top]
+//        }
+//    }
+//
+//    static let midAccountAndName = VerticalAlignment(MidAccountAndName.self)
+//}
