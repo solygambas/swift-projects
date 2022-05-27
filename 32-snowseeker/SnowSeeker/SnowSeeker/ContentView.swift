@@ -14,10 +14,12 @@ struct ContentView: View {
     @StateObject var favorites = Favorites()
     let resorts: [Resort] = Bundle.main.decode("resorts.json")
     @State private var searchText = ""
+    @State private var sort = SortType.none
+    @State private var isShowingSettings = false
     
     var body: some View {
         NavigationView {
-            List(filteredResorts) { resort in
+            List(sortedResorts) { resort in
                 NavigationLink {
                     ResortView(resort: resort)
                 } label: {
@@ -47,7 +49,20 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Resorts")
+            .toolbar {
+                Button {
+                    isShowingSettings = true
+                } label: {
+                    Label("Sort", systemImage: "arrow.up.arrow.down")
+                }
+            }
             .searchable(text: $searchText, prompt: "Search for a resort")
+            .confirmationDialog("Sort", isPresented: $isShowingSettings) {
+                    Button("None") { sort = .none }
+                    Button("Sort by name") { sort = .alphabetical }
+                    Button("Sort by country") { sort = .country }
+                    Button("Cancel", role: .cancel) { }
+                }
             WelcomeView()
         }
         //.phoneOnlyStackNavigationView()
@@ -61,6 +76,21 @@ struct ContentView: View {
             return resorts.filter { $0.name.localizedCaseInsensitiveContains(searchText)}
         }
     }
+    
+    enum SortType {
+            case none, alphabetical, country
+        }
+    
+    var sortedResorts: [Resort] {
+        switch sort {
+        case .none:
+            return filteredResorts
+        case .alphabetical:
+            return filteredResorts.sorted(by: { $0.name < $1.name} )
+        case .country:
+            return filteredResorts.sorted(by: { $0.country < $1.country})
+                    }
+        }
 }
 
 struct ContentView_Previews: PreviewProvider {
