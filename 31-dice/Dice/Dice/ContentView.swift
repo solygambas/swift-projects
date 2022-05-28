@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct Result: Identifiable {
+struct Result: Identifiable, Codable {
     var id = UUID()
     let value: Int
 }
@@ -18,7 +18,11 @@ struct ContentView: View {
     @State private var sideNumber = 6
     @State private var total = 0
     @State private var results = [Result]()
+    @State var isTimerRunning = false
+    @State var drawCount = 8
     let sidesType = [4, 6, 8, 10, 12, 20, 100]
+    let timer = Timer.publish(every: 0.15, on: .main, in: .common).autoconnect()
+    let savePath = FileManager.documentsDirectory.appendingPathComponent("SavedResults")
     
     var body: some View {
         // settings
@@ -44,41 +48,97 @@ struct ContentView: View {
             }
             Section {
                 Button("Roll") {
-                    for _ in 1...diceNumber {
-                        let result = Result(value: Int.random(in: 1...sideNumber))
-                        results.insert(result, at: 0)
-                        total += result.value
-                    }
+                    isTimerRunning = true
                 }
+                .disabled(isTimerRunning)
                 if total > 0 {
+                    HStack {
+                    Spacer()
+                    if total <= 6 {
+                        Image(systemName: "die.face.\(total)")
+                            .font(.system(size: 60))
+                    } else if total <= 50 {
+                        Image(systemName: "\(total).square")
+                            .font(.system(size: 60))
+                    } else {
+                        Text("\(total)")
+                            .font(.system(size: 60))
+                                }
+                    Spacer()
+                    }
+                    .accessibilityElement()
+                }
+            }
+            if !results.isEmpty {
+                Section {
                     ScrollView(.horizontal) {
                         LazyHGrid(rows: [GridItem(.adaptive(minimum: 50))], spacing: 10) {
                     ForEach(results) { result in
-                        if result.value <= 6 {
-                            Image(systemName: "die.face.\(result.value)")
-                                .font(.title)
-                        } else if result.value <= 50 {
-                                        Image(systemName: "\(result.value).square")
-                                            .font(.title)
-                                    } else {
-                                        Text("\(result.value)")
-                                            .font(.title)
-                                    }
+                        Text(String(result.value))
+                            .font(.title)
                     }
                     }
                     }
-                    Text(String(total))
-                        .font(.title)
+                    .accessibilityElement()
+                    .accessibilityLabel("The result is \(results[0].value)")
+                } header: {
+                    Text("Previous draws")
                 }
             }
         }
-
-        // various values (timer)
+        .onReceive(timer) { _ in
+            if isTimerRunning {
+                if drawCount > 0 {
+                    draw()
+                } else {
+                    update()
+                    save()
+                }
+                }
+                
+            }
+        .onAppear(perform: load)
+    }
+    
+    func draw() {
+        total = 0
+        for _ in 1...diceNumber {
+            total +=  Int.random(in: 1...sideNumber)
+        }
+        drawCount -= 1
+    }
+    
+    func update() {
+        isTimerRunning = false
+        let result = Result(value: total)
+        results.insert(result, at: 0)
         // haptic feedback
-        
-        // store
-        
-        // voiceOver support
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.success)
+        drawCount = 8
+    }
+    
+    func save() {
+        if let encoded = try? JSONEncoder().encode(results) {
+                    try? encoded.write(to: savePath, options: [.atomic, .completeFileProtection])
+                }
+    }
+    
+    func load() {
+        if let data = try? Data(contentsOf: savePath) {
+                    if let decoded = try? JSONDecoder().decode([Result].self, from: data) {
+                        results = decoded
+                        return
+                    }
+                }
+        return
+    }
+}
+
+extension FileManager {
+    static var documentsDirectory: URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths[0]
     }
 }
 
